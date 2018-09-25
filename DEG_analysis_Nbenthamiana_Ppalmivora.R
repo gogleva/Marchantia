@@ -1,5 +1,4 @@
 ### Nicotiona benthamiana - Ppalmivora (ARItd) Leaf transcriptome analysis
-#adapted from Anna's 
 
 #-------Set up the environment
 source("http://bioconductor.org/biocLite.R")
