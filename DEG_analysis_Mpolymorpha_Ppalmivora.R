@@ -182,7 +182,7 @@ upset(upset_me_down,
 
 dev.off()
 
-#### heatmaps of the most top 1000 most varibale genes
+#### heatmaps for DEG genes, full-transcriptome overview
 
 library(genefilter)
 dds <- DESeqDataSetFromMatrix(countData = fc_matrix,

@@ -66,8 +66,6 @@ coldata$Experiment <- factor(coldata$Experiment, levels = c('mock', 'infected'))
 #----2. DEG analysis with DESeq2
 # Pair-wise comparissons, all the steps in a function for convenience and modularity
 
-#----4. DEG analysis: pair-wise comparissons, put all the steps in a helper function
-
 get_DEG <- function(pw_counts = fc_table,
                     pw_coldata = coldata,
                     hour,
@@ -203,3 +201,31 @@ upset(upset_me_down,
       main.bar.color = '#7570B3',
       sets.x.label = "DEG per time point", 
       text.scale = c(1.5, 1.3, 1, 1, 1.2, 1.2))
+
+### heatmap for all DEGs
+
+library(genefilter)
+dds <- DESeqDataSetFromMatrix(countData = fc_table,
+                              colData = coldata,
+                              design = ~ Experiment)
+
+vsd <- vst(dds, blind = FALSE) # variance-stabilised counts
+
+nb_vsd <- as.data.frame(assay(vsd)) %>%
+          mutate(id = rownames(vsd))
+
+nb_DEG <- filter(nb_vsd, id %in% all_DEG_ids) %>%
+          select(id, everything())
+
+rownames(nb_DEG) <- nb_DEG$id
+nb_DEG <- select(nb_DEG, -id)
+DEGmat <- nb_DEG - rowMeans(nb_DEG)
+anno <- as.data.frame(colData(vsd)[, c('Time', 'Experiment')])
+
+# heatmap of all DEGs!
+
+pheatmap(DEGmat, cluster_cols = FALSE,
+         show_rownames = FALSE,
+         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
+         annotation = anno)
+
