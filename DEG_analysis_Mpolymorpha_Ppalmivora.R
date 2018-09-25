@@ -16,7 +16,7 @@ library(UpSetR)
 
 #----1.Preliminaries ----
 #----download feature counts table ----
-fc_table <- read.table("FeartureCounts_STAR_Mpolymorpha",
+fc_table <- read.table("data/FeartureCounts_STAR_Mpolymorpha",
                        header = F,
                        sep = '\t')
 
@@ -38,7 +38,7 @@ row.names(fc_matrix) <- fc_matrix[,1]
 fc_matrix <- fc_matrix[,-c(1)]
 
 #---- prep metadata ----
-sample_table <- read.csv("sample_table_Mpolymorpha.csv",
+sample_table <- read.csv("data/sample_table_Mpolymorpha.csv",
                          header = T,
                          row.names = 1)
 sample_table$Experiment.type <- factor(sample_table$Experiment.type, levels = c("mock", "infected"))
