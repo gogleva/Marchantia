@@ -1,0 +1,25 @@
+,Experiment type,Time
+A1A,infected,1d
+A1B,infected,1d
+A1C,infected,1d
+A2A,infected,2d
+A2B,infected,2d
+A2C,infected,2d
+A3A,infected,3d
+A3B,infected,3d
+A3C,infected,3d
+A4A,infected,4d
+A4B,infected,4d
+A4C,infected,4d
+M1A,mock,1d
+M1B,mock,1d
+M1C,mock,1d
+M2A,mock,2d
+M2B,mock,2d
+M2C,mock,2d
+M3A,mock,3d
+M3B,mock,3d
+M3C,mock,3d
+M4A,mock,4d
+M4B,mock,4d
+M4C,mock,4d
