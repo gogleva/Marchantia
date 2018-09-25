@@ -1,0 +1,25 @@
+,Experiment type,Time
+A14A,infected,14h
+A14B,infected,14h
+A14C,infected,14h
+A24A,infected,24h
+A24B,infected,24h
+A24C,infected,24h
+A48A,infected,48h
+A48B,infected,48h
+A48C,infected,48h
+A72A,infected,72h
+A72B,infected,72h
+A72C,infected,72h
+M14A,mock,14h
+M14B,mock,14h
+M14C,mock,14h
+M24A,mock,24h
+M24B,mock,24h
+M24C,mock,24h
+M48A,mock,48h
+M48B,mock,48h
+M48C,mock,48h
+M72A,mock,72h
+M72B,mock,72h
+M72C,mock,72h

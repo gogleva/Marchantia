@@ -1,4 +1,4 @@
-### Marchantia infected with P.palmivora transcriptome analysis
+### Marchantia infected with P.palmivora (ARItd) transcriptome analysis
 
 #-------Set up the environment ----
 source("http://bioconductor.org/biocLite.R")
@@ -16,9 +16,9 @@ library(UpSetR)
 
 #----1.Preliminaries ----
 #----download feature counts table ----
-fc_table <- read.table("data/FeartureCounts_STAR_Mpolymorpha",
-                       header = F,
-                       sep = '\t')
+fc_table <- read_tsv("data/FeartureCounts_STAR_Mpolymorpha.tsv",
+                       col_names = FALSE)
+
 
 #----fix column names ----
 names(fc_table) <- c("gene_id", 'chr', 'start', 'stop',
