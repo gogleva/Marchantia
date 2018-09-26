@@ -15,10 +15,7 @@ library(UpSetR)
 #----1.Preliminaries ----
 #----download feature counts table ----
 
-# DELETEME
-#setwd('/home/anna/anna/Labjournal/Manuscripts/marchantia_II_plant_response/Marchantia_repo/')
-
-# Load the featurecounts
+# Load raw counts
 
 mycounts <- read_csv("data/FeatureCounts_STAR_Nbenthamiana.csv")
 
@@ -79,8 +76,8 @@ get_DEG <- function(pw_counts = fc_table,
     if (!(is.numeric(hour))) stop('hour must be numeric!')
     
     # subset relevant counts and metadata rows
-    pw_coldata <- coldata[coldata$Time == paste0(hour, 'h'),]
-    pw_counts <- select(fc_table,
+    pw_coldata <- pw_coldata[pw_coldata$Time == paste0(hour, 'h'),]
+    pw_counts <- select(pw_counts,
                         contains(as.character(hour)))
     
     # DEG analysis:
