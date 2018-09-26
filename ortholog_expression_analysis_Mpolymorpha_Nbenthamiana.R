@@ -50,7 +50,7 @@ mp_coldata$Experiment <- factor(mp_coldata$Experiment, levels = c('mock', 'infec
 nb_counts <- read_csv("data/FeatureCounts_STAR_Nbenthamiana.csv")
 
 #remove columns that we dont need anymore
-cleancounts <- select(nb_mycounts, -c(X2:X6))
+cleancounts <- select(nb_counts, -c(X2:X6))
 
 # rename columns
 names(cleancounts) <- c('rowids', 
@@ -74,7 +74,7 @@ nb_fc_table <- select(cleancounts,
 #These two steps will make sure that the rownames are now the rowids/benthi loci, then delete the redundant rowids columns
 
 row.names(nb_fc_table) <- nb_fc_table$rowids
-nb_fc_table <- select(nb_fc_table, -rowids)
+nb_fc_matrix <- select(nb_fc_table, -rowids)
 
 #---- prep metadata
 nb_sample_table <- read.csv("data/sample_table_Nbenthamiana.csv",
@@ -85,6 +85,65 @@ nb_coldata <- nb_sample_table
 
 #put the variable of interest at the end of the formula, the control level is the first level.
 nb_coldata$Experiment <- factor(nb_coldata$Experiment, levels = c('mock', 'infected'))
+
+#---- 2. DEG analysis: pair-wise comparisons between infected-mock for each plant and time point.
+# we want to keep LFC values in 4 stages of infection, filter by adjsted p-value. Will use LFC later to compare expression patterns of orthologues genes.
+
+### DEGs for orthologs:
+# (wee need LFC in 4 time points, with filtering by p-value, w/o filtering by LFC)
+
+get_DEG_LFC <- function(pw_counts,
+                        pw_coldata,
+                        species = c('Mpolymorpha', 'Nbenthamina'),
+                        day_time, 
+                        pv = 0.001
+                        ){
+    # produce DEG analysis for a given time point, output a df with significant results (padj and log2FC)
+    
+    # quick check: day_time should be numeric
+    if (!(is.numeric(day_time))) stop('day_time must be numeric!')
+    
+    # subset relevant counts and metadata rows
+    if (species == 'Mpolymorpha'){
+        pw_coldata <- pw_coldata[pw_coldata$Time == paste0(day_time, 'd'),]
+    }
+    
+    if (species == 'Nbenthamiana'){
+        pw_coldata <- pw_coldata[pw_coldata$Time == paste0(day_time, 'h'),]
+    }
+    
+    pw_counts <- select(pw_counts,
+                        contains(as.character(day_time)))
+    
+    # DEG analysis:
+    pw_dds <- DESeqDataSetFromMatrix(countData = pw_counts,
+                                     colData = pw_coldata,
+                                     design = ~ Experiment)
+    pw_dds <- pw_dds[rowSums(counts(pw_dds)) > 10, ]
+    pw_dds <- DESeq(pw_dds)
+    pw_res <- results(pw_dds, alpha = 0.001)
+    
+    pw_res_ordered <- pw_res[order(pw_res$padj),]
+        
+    # Filter genes by adjusted p-value <= 10^-3
+    pw_resSig <- as.data.frame(subset(pw_res_ordered, padj < pv))
+    pw_resSig$gene_id <- rownames(pw_resSig)
+    return(pw_resSig)       
+}
+
+# test run
+mp_1 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
+            pw_coldata = mp_sample_table,
+            species = 'Mpolymorpha',
+            day_time = 1)
+
+nb_14 <- get_DEG_LFC(pw_counts = nb_fc_table,
+                    pw_coldata = nb_sample_table,
+                    species = 'Nbenthamiana',
+                    day_time = 14)
+
+
+
 
 
 
