@@ -63,8 +63,8 @@ get_DEG <- function(pw_counts = fc_matrix,
     if (!(is.numeric(day))) stop('day must be numeric!')
     
     # subset relevant counts and metadata rows
-    pw_coldata <- coldata[coldata$Time == paste0(day, 'd'),]
-    pw_counts <- select(fc_matrix,
+    pw_coldata <- pw_coldata[pw_coldata$Time == paste0(day, 'd'),]
+    pw_counts <- select(pw_counts,
                         contains(as.character(day)))
     
     # DEG analysis:
