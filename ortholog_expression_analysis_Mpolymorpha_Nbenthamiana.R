@@ -69,7 +69,8 @@ nb_fc_table <- select(cleancounts,
                    A14A:A48C,
                    A72A:A72C,
                    M14A:M48C,
-                   M72A:M72C)
+                   M72A:M72C) %>%
+               as.data.frame()
 
 #These two steps will make sure that the rownames are now the rowids/benthi loci, then delete the redundant rowids columns
 
@@ -128,22 +129,63 @@ get_DEG_LFC <- function(pw_counts,
     # Filter genes by adjusted p-value <= 10^-3
     pw_resSig <- as.data.frame(subset(pw_res_ordered, padj < pv))
     pw_resSig$gene_id <- rownames(pw_resSig)
+    
+    pw_resSig <- pw_resSig %>%
+                 mutate(day_time = 1) %>%
+                 select(gene_id, day_time, everything())
     return(pw_resSig)       
 }
 
-# test run
-mp_1 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
-            pw_coldata = mp_sample_table,
-            species = 'Mpolymorpha',
-            day_time = 1)
 
-nb_14 <- get_DEG_LFC(pw_counts = nb_fc_table,
+# MP LFC ----
+
+mp_deg1 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
+                       pw_coldata = mp_sample_table,
+                       species = 'Mpolymorpha',
+                       day_time = 1)
+mp_deg2 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
+                       pw_coldata = mp_sample_table,
+                       species = 'Mpolymorpha',
+                       day_time = 2)
+
+mp_deg3 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
+                       pw_coldata = mp_sample_table,
+                       species = 'Mpolymorpha',
+                       day_time = 3)
+mp_deg4 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
+                       pw_coldata = mp_sample_table,
+                       species = 'Mpolymorpha',
+                       day_time = 4)
+# combine in one object
+
+mp_deg_all <- rbind(mp_deg1, mp_deg2,
+                    mp_deg3, mp_deg4) %>%
+              mutate(species = 'Mpoly')
+
+# Niben LFC: to do - optimize this ----
+
+nb_deg14 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
                     pw_coldata = nb_sample_table,
                     species = 'Nbenthamiana',
                     day_time = 14)
 
+nb_deg24 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
+                        pw_coldata = nb_sample_table,
+                        species = 'Nbenthamiana',
+                        day_time = 24)
 
+nb_deg48 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
+                        pw_coldata = nb_sample_table,
+                        species = 'Nbenthamiana',
+                        day_time = 48)
 
+nb_deg72 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
+                        pw_coldata = nb_sample_table,
+                        species = 'Nbenthamiana',
+                        day_time = 72)
 
+nb_deg_all <- rbind(nb_deg14, nb_deg24,
+                    nb_deg48, nb_deg72) %>%
+              mutate(species = 'Niben')
 
 
