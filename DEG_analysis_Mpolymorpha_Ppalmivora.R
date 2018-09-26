@@ -16,8 +16,7 @@ library(UpSetR)
 
 #----1.Preliminaries ----
 #----download feature counts table ----
-fc_table <- read_tsv("data/FeartureCounts_STAR_Mpolymorpha.tsv",
-                       col_names = FALSE)
+fc_table <- read.table("data/FeartureCounts_STAR_Mpolymorpha.tsv")
 
 
 #----fix column names ----
@@ -33,17 +32,14 @@ names(fc_table) <- c("gene_id", 'chr', 'start', 'stop',
                      'M4A', 'M4B', 'M4C')
 
 #----format count matrix ----
-fc_matrix <- as.data.frame(fc_table[,c(1,7:30)])
-rownames(fc_matrix) <- fc_matrix$gene_id
+fc_matrix <- fc_table[,c(1,7:30)]
+row.names(fc_matrix) <- fc_matrix[,1]
 fc_matrix <- fc_matrix[,-c(1)]
 
 #---- prep metadata ----
 sample_table <- read.csv("data/sample_table_Mpolymorpha.csv",
                          header = T,
                          row.names = 1)
-sample_table$Experiment.type <- factor(sample_table$Experiment.type,
-                                       levels = 
-                                           c("mock", "infected"))
 #to make it shorter:
 names(sample_table)[1] <- "Experiment" 
 #rename for consistency:
@@ -182,7 +178,7 @@ upset(upset_me_down,
 
 dev.off()
 
-#### heatmaps for DEG genes, full-transcriptome overview
+#### heatmaps of the most significant DEG overview
 
 library(genefilter)
 dds <- DESeqDataSetFromMatrix(countData = fc_matrix,
@@ -191,25 +187,23 @@ dds <- DESeqDataSetFromMatrix(countData = fc_matrix,
 
 vsd <- vst(dds, blind = FALSE) # variance-stabilised counts
 
-mp_vsd <- as.data.frame(assay(vsd)) %>%
-    mutate(id = str_replace(rownames(vsd), ' ', ''))
-
-all_DEG_ids <- str_replace(all_DEG_ids, ' ', '')
-
-mp_DEG <- filter(mp_vsd, id %in% all_DEG_ids) %>%
-    select(id, A1A:M4C)
-
-rownames(mp_DEG) <- mp_DEG$id
-mp_DEG <- select(mp_DEG, -id)
-DEGmat <- mp_DEG - rowMeans(mp_DEG)
+topVarGenes <- head(order(rowVars(assay(vsd)), 
+                          decreasing = TRUE),
+                    1000)
+mat <- assay(vsd)[topVarGenes, ]
+mat <- mat - rowMeans(mat)
 anno <- as.data.frame(colData(vsd)[, c('Time', 'Experiment')])
 
-# heatmap of all DEGs!
-
-pheatmap(DEGmat, cluster_cols = FALSE,
+pheatmap(mat, cluster_cols = FALSE,
          show_rownames = FALSE,
-         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
-         annotation = anno)
+         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50))
+
+dev.off()
+
+
+
+
+
 
 
 
