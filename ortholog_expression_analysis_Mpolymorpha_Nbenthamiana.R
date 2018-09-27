@@ -43,7 +43,6 @@ mp_sample_table <- read.csv("data/sample_table_Mpolymorpha.csv",
 mp_sample_table$Experiment.type <- factor(mp_sample_table$Experiment.type, levels = c("mock", "infected"))
 names(mp_sample_table)[1] <- "Experiment" 
 mp_coldata <- mp_sample_table
-mp_coldata$Experiment <- factor(mp_coldata$Experiment, levels = c('mock', 'infected'))
 
 # Nicotiana benthamiana + P.palmivora (ARI-tdTomato) ----
 
@@ -85,9 +84,6 @@ nb_sample_table <- read.csv("data/sample_table_Nbenthamiana.csv",
 nb_sample_table$Experiment.type <- factor(nb_sample_table$Experiment.type, levels = c("mock", "infected"))
 names(nb_sample_table)[1] <- "Experiment" 
 nb_coldata <- nb_sample_table
-
-#put the variable of interest at the end of the formula, the control level is the first level.
-nb_coldata$Experiment <- factor(nb_coldata$Experiment, levels = c('mock', 'infected'))
 
 #---- 2. DEG analysis: pair-wise comparisons between infected-mock for each plant and time point.
 # we want to keep LFC values in 4 stages of infection, filter by adjsted p-value. Will use LFC later to compare expression patterns of orthologues genes.
@@ -276,4 +272,9 @@ plotdat_mp_nb_annotated %>%
     geom_hline(yintercept = 0)  +
     facet_wrap(~day_time)
 
+View(plotdat_mp_nb_annotated %>%
+         filter(!is.na(type)))
+
+
+### figure for the paper
 
