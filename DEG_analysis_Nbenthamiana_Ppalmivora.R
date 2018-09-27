@@ -145,7 +145,6 @@ all_DEG_ids <- unique(c(rownames(DEG_14h),
                         rownames(DEG_48h),
                         rownames(DEG_72h)))
 
-# 1916 up genes
 # helper function to extract up/down gene sets in upset-compatible format
 make_set <- function(deg_set, 
                      lfc = 2, # default
