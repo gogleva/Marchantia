@@ -129,18 +129,28 @@ dev.off()
 all_DEG_ids <- unique(c(rownames(DEG_1d), rownames(DEG_2d),
                         rownames(DEG_3d), rownames(DEG_4d)))
 
-# 1916 up genes
-
-up_1dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_1d[DEG_1d$log2FoldChange >= 2,]))
-up_2dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_2d[DEG_2d$log2FoldChange >= 2,]))
-up_3dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_3d[DEG_3d$log2FoldChange >= 2,]))
-up_4dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_4d[DEG_4d$log2FoldChange >= 2,]))
+# helper function to extract up/down gene sets in upset-compatible format
+make_set <- function(deg_set, 
+                     lfc = 2, # default
+                     direction){
+    # deg_set - deg set we want to convert to upset-compatible set;
+    # lfc - lfc thershold
+    # direction - 'up' for up-regulated or 'down' for down-regulated genes
+    
+    if(direction == 'up'){
+        res_set <- as.numeric(
+            all_DEG_ids %in% rownames(deg_set[deg_set$log2FoldChange >= lfc,]))
+    } else {
+        res_set <- as.numeric(
+            all_DEG_ids %in% rownames(deg_set[deg_set$log2FoldChange <= -lfc,]))                  
+    } 
+}
 
 upset_me <- data.frame(id = all_DEG_ids,
-                       up1 = up_1dpi,
-                       up2 = up_2dpi,
-                       up3 = up_3dpi,
-                       up4 = up_4dpi)
+                       up1 = make_set(DEG_1d, direction = 'up'),
+                       up2 = make_set(DEG_2d, direction = 'up'),
+                       up3 = make_set(DEG_3d, direction = 'up'),
+                       up4 = make_set(DEG_4d, direction = 'up'))
 
 upset(upset_me, sets = c('up1', 'up2', 'up3', 'up4'),
       order.by = "freq",
@@ -149,23 +159,19 @@ upset(upset_me, sets = c('up1', 'up2', 'up3', 'up4'),
       sets.x.label = "DEG per time point", 
       text.scale = c(1.5, 1.5, 1.1, 1.2, 1.5))
 
-
 dev.off()
 
 # down genes
 
-down_1dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_1d[DEG_1d$log2FoldChange <= -2,]))
-down_2dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_2d[DEG_2d$log2FoldChange <= -2,]))
-down_3dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_3d[DEG_3d$log2FoldChange <= -2,]))
-down_4dpi <- as.numeric(all_DEG_ids %in% rownames(DEG_4d[DEG_4d$log2FoldChange <= -2,]))
-
 upset_me_down <- data.frame(id = all_DEG_ids,
-                            down1 = down_1dpi,
-                            down2 = down_2dpi,
-                            down3 = down_3dpi,
-                            down4 = down_4dpi)
-
-
+                            down1 = make_set(DEG_1d,
+                                              direction = 'down'),
+                            down2 = make_set(DEG_2d,
+                                              direction = 'down'),
+                            down3 = make_set(DEG_3d,
+                                              direction = 'down'),
+                            down4 = make_set(DEG_4d,
+                                              direction = 'down'))
 upset(upset_me_down,
       sets = c('down4', 'down3', 'down2', 'down1'),
       order.by = "freq",
