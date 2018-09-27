@@ -1,0 +1,1668 @@
+gene_id,type,category,description,proteome_support
+Mapoly0076s0014,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0015s0055,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0065s0098,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0030s0087,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0021s0020,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0075s0004,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0021s0022,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0021s0023,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0010s0003,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0010s0005,cell wall,GT2,glycosyl transferase GT2,0
+Mapoly0183s0015,cell wall,GT48,Callose synthase,0
+Mapoly0148s0007,cell wall,GT48,Callose synthase,0
+Mapoly0031s0080,cell wall,GT48,Callose synthase,0
+Mapoly0015s0078,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0028s0105,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0141s0019,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0008s0033,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0024s0009,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0022s0183,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0022s0180,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0132s0001,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0024s0013,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0137s0009,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0022s0195,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0037s0032,cell wall,GT34,"Xyloglucan α-1,6-xylosyltransferase",0
+Mapoly0037s0062,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0160s0021,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0014s0013,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0014s0019,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0004s0297,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0001s0077,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0002s0257,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0147s0031,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0050s0126,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0006s0032,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0084s0026,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0126s0040,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0183s0022,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0077s0048,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0053s0090,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0097s0076,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0068s0073,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0074s0038,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0001s0074,cell wall,GT47,glycosyl transferase GT47,0
+Mapoly0109s0033,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0020s0081,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0029s0110,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0026s0127,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0055s0022,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0045s0099,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0202s0006,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0035s0074,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0003s0134,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0013s0123,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0021s0069,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0057s0027,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0177s0004,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0076s0054,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0102s0023,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0076s0055,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0040s0005,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0040s0103,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0132s0047,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0016s0100,cell wall,GT37,"Xyloglucan α-1,2-fucosyltransferase
+AGP α-1,2-fucosyltransferase",0
+Mapoly0022s0037,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0036s0088,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0113s0022,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0107s0019,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0065s0017,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0055s0117,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0044s0079,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0120s0025,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0009s0041,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0026s0119,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0066s0014,cell wall,GT8,glycosyl transferase GT8,1
+Mapoly0003s0193,cell wall,GT8,glycosyl transferase GT8,0
+Mapoly0113s0008,cell wall,GT43,Xylan xylosyltransfearse,0
+Mapoly0004s0253,cell wall,GT43,Xylan xylosyltransfearse,0
+Mapoly0053s0060,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0109s0006,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0004s0216,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0058s0095,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0108s0013,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0057s0091,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0007s0065,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0119s0012,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0015s0051,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0015s0106,cell wall,GT61,"Arabinoxylanα-1,3-arabinosyltransferase
+Glycoproteinβ-1,2-xylosyltransferase",0
+Mapoly0001s0264,cell wall,GT29,Sialyltransferase-like protein,0
+Mapoly0005s0249,cell wall,GT29,Sialyltransferase-like protein,0
+Mapoly0032s0065,cell wall,GT29,Sialyltransferase-like protein,0
+Mapoly0028s0144,cell wall,GT29,Sialyltransferase-like protein,0
+Mapoly0059s0093,cell wall,GT77,"RGII α-1,3-D-xylosyltransferase",0
+Mapoly0019s0126,cell wall,GT77,"RGII α-1,3-D-xylosyltransferase",0
+Mapoly0046s0108,cell wall,GT77,"RGII α-1,3-D-xylosyltransferase",0
+Mapoly0050s0027,cell wall,GT77,"RGII α-1,3-D-xylosyltransferase",0
+Mapoly0001s0235,cell wall,GT77,"RGII α-1,3-D-xylosyltransferase",0
+Mapoly0006s0046,cell wall,GT64,glycosyl transferase GT64,0
+Mapoly0001s0350,cell wall,GT64,glycosyl transferase GT64,0
+Mapoly0066s0023,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0066s0072,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0066s0074,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0066s0075,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0066s0076,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0071s0084,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0071s0082,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0071s0085,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0072s0046,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0072s0065,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0089s0005,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0095s0068,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0094s0049,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0094s0050,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0094s0046,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0094s0045,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0111s0012,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0117s0020,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0130s0044,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0130s0045,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0131s0006,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,1
+Mapoly0132s0043,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0149s0002,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0177s0015,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0006,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0007,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0008,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0005,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0013,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0001s0422,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0019s0169,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0040s0065,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0040s0062,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0008s0185,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0177s0014,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0004,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0203s0003,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0149s0003,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly1415s0001,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0223s0003,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0071s0083,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0149s0004,cell wall,GH16,Xyloglucan endotransglucosylase/hydrolase,0
+Mapoly0019s0184,cell wall,Expansin,Expansin,0
+Mapoly0085s0061,cell wall,Expansin,Expansin,0
+Mapoly0085s0051,cell wall,Expansin,Expansin,0
+Mapoly0024s0046,cell wall,Expansin,Expansin,0
+Mapoly0125s0001,cell wall,Expansin,Expansin,0
+Mapoly0061s0098,cell wall,Expansin,Expansin,0
+Mapoly0118s0017,cell wall,Expansin,Expansin,0
+Mapoly0022s0139,cell wall,Expansin,Expansin,1
+Mapoly0022s0142,cell wall,Expansin,Expansin,0
+Mapoly0178s0007,cell wall,Expansin,Expansin,0
+Mapoly0058s0021,cell wall,Expansin,Expansin,1
+Mapoly0022s0134,cell wall,Expansin,Expansin,0
+Mapoly0118s0015,cell wall,Expansin,Expansin,0
+Mapoly0022s0143,cell wall,Expansin,Expansin,0
+Mapoly0085s0052,cell wall,Expansin,Expansin,0
+Mapoly0058s0020,cell wall,Expansin,Expansin,0
+Mapoly0085s0011,cell wall,Expansin,Expansin,0
+Mapoly0002s0243,cell wall,Expansin,Expansin,0
+Mapoly0131s0018,cell wall,Expansin,Expansin,0
+Mapoly0178s0009,cell wall,Expansin,Expansin,0
+Mapoly0107s0006,cell wall,Expansin,Expansin,0
+Mapoly0137s0020,cell wall,Expansin,Expansin,0
+Mapoly0161s0011,cell wall,Expansin,Expansin,0
+Mapoly0137s0021,cell wall,Expansin,Expansin,0
+Mapoly0006s0158,cell wall,Expansin,Expansin,0
+Mapoly0118s0014,cell wall,Expansin,Expansin,0
+Mapoly0090s0011,cell wall,Expansin,Expansin,0
+Mapoly0085s0015,cell wall,Expansin,Expansin,0
+Mapoly0085s0053,cell wall,Expansin,Expansin,0
+Mapoly0085s0014,cell wall,Expansin,Expansin,0
+Mapoly0061s0082,cell wall,Expansin,Expansin,0
+Mapoly0050s0034,cell wall,Expansin,Expansin,0
+Mapoly0105s0025,cell wall,Expansin,Expansin,0
+Mapoly0050s0035,cell wall,Expansin,Expansin,0
+Mapoly0050s0033,cell wall,Expansin,Expansin,0
+Mapoly0090s0012,cell wall,Expansin,Expansin,0
+Mapoly0002s0190,cell wall,Expansin,Expansin,0
+Mapoly0897s0001,cell wall,Expansin,Expansin,0
+Mapoly0030s0120,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0077s0066,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0012s0178,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0012s0153,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0001s0390,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0025s0059,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0061s0043,cell wall,GH9,"β-1,4-glucanase, cellulase",0
+Mapoly0074s0005,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0051s0021,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0074s0006,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0149s0034,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0059s0025,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0104s0030,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0015s0161,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0014s0109,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0031s0056,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0016s0036,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0026s0146,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0030s0076,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0042s0097,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0050s0050,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0042s0095,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0009s0004,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0557s0001,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0208s0003,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0112s0010,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0033s0034,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly1717s0001,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0042s0077,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0026s0149,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0042s0094,cell wall,GH17,"β-1,3-glucanase",1
+Mapoly0009s0002,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0009s0003,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0026s0147,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0026s0144,cell wall,GH17,"β-1,3-glucanase",0
+Mapoly0081s0081,cell wall,GH18,Chitinase,0
+Mapoly0117s0050,cell wall,GH18,Chitinase,0
+Mapoly0092s0054,cell wall,GH18,Chitinase,1
+Mapoly0118s0041,cell wall,GH18,Chitinase,0
+Mapoly0352s0004,cell wall,GH18,Chitinase,0
+Mapoly0196s0008,cell wall,GH18,Chitinase,0
+Mapoly0023s0114,cell wall,GH18,Chitinase,0
+Mapoly0031s0021,cell wall,GH18,Chitinase,0
+Mapoly0015s0159,cell wall,GH18,Chitinase,0
+Mapoly0098s0022,cell wall,GH19,Chitinase,0
+Mapoly0069s0092,cell wall,GH19,Chitinase,1
+Mapoly0069s0089,cell wall,GH19,Chitinase,0
+Mapoly0044s0030,cell wall,GH19,Chitinase,0
+Mapoly0116s0046,cell wall,GH19,Chitinase,0
+Mapoly0116s0048,cell wall,GH19,Chitinase,0
+Mapoly0116s0045,cell wall,GH19,Chitinase,0
+Mapoly0147s0041,cell wall,GH19,Chitinase,0
+Mapoly0040s0034,cell wall,GH19,Chitinase,0
+Mapoly0147s0044,cell wall,GH19,Chitinase,0
+Mapoly0106s0016,cell wall,GH19,Chitinase,0
+Mapoly0062s0074,cell wall,GH19,Chitinase,0
+Mapoly0147s0042,cell wall,GH19,Chitinase,0
+Mapoly0147s0004,cell wall,GH19,Chitinase,0
+Mapoly0020s0126,cell wall,GH19,Chitinase,0
+Mapoly0082s0063,cell wall,GH35,"Xyloglucan β-1,2-galactosidase",0
+Mapoly0066s0004,cell wall,GH35,"Xyloglucan β-1,2-galactosidase",0
+Mapoly0206s0004,cell wall,GH35,"Xyloglucan β-1,2-galactosidase",0
+Mapoly0113s0014,cell wall,GH35,"Xyloglucan β-1,2-galactosidase",0
+Mapoly0008s0199,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0008s0198,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0013s0124,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0135s0001,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0064s0040,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0633s0002,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0147s0026,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0059s0108,cell wall,GH31,"Xyloglucan α-1,6-xylosidase",0
+Mapoly0051s0113,cell wall,GH51,bifunctionalα-L-arabinofuranosidase/β-D-xylosidase,0
+Mapoly0214s0014,cell wall,GH3,β-xylosidase,0
+Mapoly0014s0035,cell wall,GH3,β-xylosidase,0
+Mapoly0214s0013,cell wall,GH3,β-xylosidase,0
+Mapoly0015s0087,cell wall,GH3,β-xylosidase,0
+Mapoly0124s0035,cell wall,GH3,β-xylosidase,0
+Mapoly0106s0041,cell wall,GH3,β-xylosidase,0
+Mapoly0071s0042,cell wall,GH3,β-xylosidase,0
+Mapoly0069s0044,cell wall,GH3,β-xylosidase,0
+Mapoly0102s0003,cell wall,GH3,β-xylosidase,0
+Mapoly0070s0086,cell wall,GH38,α-mannosidase,0
+Mapoly0060s0055,cell wall,GH38,α-mannosidase,0
+Mapoly0060s0008,cell wall,GH38,α-mannosidase,0
+Mapoly0027s0094,cell wall,GH1,"β-glucosidase, exo-β-1,4-mannosidase",0
+Mapoly0182s0005,cell wall,GH1,"β-glucosidase, exo-β-1,4-mannosidase",0
+Mapoly0042s0006,cell wall,GH1,"β-glucosidase, exo-β-1,4-mannosidase",0
+Mapoly0094s0053,cell wall,GH1,"β-glucosidase, exo-β-1,4-mannosidase",0
+Mapoly0082s0065,cell wall,GH1,"β-glucosidase, exo-β-1,4-mannosidase",0
+Mapoly0097s0091,cell wall,GH10,Endo-β-xylanase,0
+Mapoly0037s0124,cell wall,GH28,Polygalacturonase,0
+Mapoly0160s0009,cell wall,GH28,Polygalacturonase,0
+Mapoly0009s0072,cell wall,GH28,Polygalacturonase,0
+Mapoly0056s0050,cell wall,GH28,Polygalacturonase,0
+Mapoly0160s0007,cell wall,GH28,Polygalacturonase,0
+Mapoly0160s0008,cell wall,GH28,Polygalacturonase,0
+Mapoly0087s0047,cell wall,GH28,Polygalacturonase,0
+Mapoly0160s0006,cell wall,GH28,Polygalacturonase,0
+Mapoly0077s0062,cell wall,CE8,Pectin methylestrase,0
+Mapoly0176s0016,cell wall,CE8,Pectin methylestrase,0
+Mapoly0056s0025,cell wall,CE8,Pectin methylestrase,0
+Mapoly0007s0111,cell wall,CE8,Pectin methylestrase,1
+Mapoly0001s0096,cell wall,CE8,Pectin methylestrase,0
+Mapoly0028s0010,cell wall,CE8,Pectin methylestrase,1
+Mapoly0103s0067,cell wall,CE8,Pectin methylestrase,0
+Mapoly0055s0109,cell wall,CE8,Pectin methylestrase,1
+Mapoly0066s0024,cell wall,CE8,Pectin methylestrase,0
+Mapoly0141s0002,cell wall,CE8,Pectin methylestrase,1
+Mapoly0259s0002,cell wall,CE8,Pectin methylestrase,1
+Mapoly0072s0087,cell wall,CE8,Pectin methylestrase,0
+Mapoly0004s0080,cell wall,CE8,Pectin methylestrase,0
+Mapoly0023s0179,cell wall,CE8,Pectin methylestrase,0
+Mapoly0010s0172,cell wall,CE13,Pectin O-acetylation,1
+Mapoly0004s0295,cell wall,CE13,Pectin O-acetylation,0
+Mapoly0272s0001,cell wall,CE13,Pectin O-acetylation,0
+Mapoly0089s0001,cell wall,CE13,Pectin O-acetylation,0
+Mapoly0323s0002,cell wall,CE13,Pectin O-acetylation,0
+Mapoly0007s0096,cell wall,PL1,Pectin Lyases,0
+Mapoly0008s0203,cell wall,PL1,Pectin Lyases,0
+Mapoly0064s0120,cell wall,PL1,Pectin Lyases,0
+Mapoly0069s0096,cell wall,PL1,Pectin Lyases,0
+Mapoly0005s0015,cell wall,PL1,Pectin Lyases,0
+Mapoly0007s0157,cell wall,PL1,Pectin Lyases,0
+Mapoly0062s0067,cell wall,PMT,HG methyltransferase,0
+Mapoly0052s0026,cell wall,PMT,HG methyltransferase,1
+Mapoly0012s0079,cell wall,PMT,HG methyltransferase,0
+Mapoly0001s0032,cell wall,PMT,HG methyltransferase,0
+Mapoly0146s0035,cell wall,PMT,HG methyltransferase,0
+Mapoly0033s0168,cell wall,PMT,HG methyltransferase,0
+Mapoly0071s0103,cell wall,PMT,HG methyltransferase,0
+Mapoly0006s0239,cell wall,PMT,HG methyltransferase,0
+Mapoly0032s0102,cell wall,MurA,peptidoglycan biosynthesis,0
+Mapoly0081s0037,cell wall,MurB,peptidoglycan biosynthesis,0
+Mapoly0106s0042,cell wall,MurC,peptidoglycan biosynthesis,0
+Mapoly0099s0027,cell wall,MurD,peptidoglycan biosynthesis,0
+Mapoly0091s0082,cell wall,MurE,peptidoglycan biosynthesis,0
+Mapoly0001s0484,cell wall,MurF,peptidoglycan biosynthesis,0
+Mapoly0014s0012,cell wall,MurG,peptidoglycan biosynthesis,0
+Mapoly0014s0018,cell wall,MurG,peptidoglycan biosynthesis,0
+Mapoly0001s0010,cell wall,MraY,peptidoglycan biosynthesis,0
+Mapoly0082s0057,cell wall,PBP,peptidoglycan biosynthesis,0
+Mapoly0266s0003,cell wall,DDL,peptidoglycan biosynthesis,0
+Mapoly0008s0188,flavonoid pathway,NA,3-Deoxy-d-arabino-heptulosonate-7-phosphate synthase,1
+Mapoly0031s0094,flavonoid pathway,NA,3-Dehydroquinate synthase,0
+Mapoly0047s0090,flavonoid pathway,NA,3-Dehydroquinate dehydratase,0
+Mapoly0035s0139,flavonoid pathway,NA,Shikimate Kinase,0
+Mapoly0089s0033,flavonoid pathway,NA,Shikimate Kinase,0
+Mapoly0034s0104,flavonoid pathway,NA,5-Enolpyruvylshikimate-3-phosphate synthase,0
+Mapoly0034s0103 ,flavonoid pathway,NA,3-Hydroxyacyl-CoA dehydratase,0
+Mapoly0010s0013,flavonoid pathway,NA,3-Hydroxyacyl-CoA dehydratase,0
+Mapoly0007s0052,flavonoid pathway,NA,Chorismate Synthase,0
+Mapoly0028s0048,flavonoid pathway,NA,Chorismate mutase,0
+Mapoly0058s0104,flavonoid pathway,NA,Prephenate aminotransferase,0
+Mapoly0024s0086,flavonoid pathway,NA,Arogenate dehydratase,0
+Mapoly0024s0087,flavonoid pathway,NA,Arogenate dehydratase,0
+Mapoly0071s0057,flavonoid pathway,NA,Arogenate dehydratase,0
+Mapoly0204s0012,flavonoid pathway,NA,Arogenate dehydratase,1
+Mapoly0005s0086,flavonoid pathway,NA,Phenylalanine ammonia lyase,0
+Mapoly0005s0089,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0009s0173,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0014s0211,flavonoid pathway,NA,Phenylalanine ammonia lyase,0
+Mapoly0044s0114,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0070s0061,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0070s0065,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0070s0068,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0070s0071,flavonoid pathway,NA,Phenylalanine ammonia lyase,1
+Mapoly0132s0049,flavonoid pathway,NA,Phenylalanine ammonia lyase,0
+Mapoly0037s0087,flavonoid pathway,NA,Coumarate 3'-hydroxylase (CYP98A),0
+Mapoly0002s0100,flavonoid pathway,NA,4-Coumaroyl Co-A ligase,0
+Mapoly0005s0102,flavonoid pathway,NA,4-Coumaroyl Co-A ligase,0
+Mapoly0197s0014,flavonoid pathway,NA,4-Coumaroyl Co-A ligase,0
+Mapoly0081s0008,flavonoid pathway,NA,Cinnamate 4-hydroxylase (CYP73A),1
+Mapoly0081s0009 ,flavonoid pathway,NA,Cinnamate 4-hydroxylase (CYP73A),1
+Mapoly0163s0018,flavonoid pathway,NA,Cinnamate 4-hydroxylase (CYP73A),1
+Mapoly0009s0174,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0009s0178,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0009s0179,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0009s0180,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0014s0122,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0020s0082,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0021s0159,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0040s0121,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0041s0118,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0044s0115,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0055s0104,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0070s0036,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0070s0060,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0070s0062,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0070s0063,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0070s0064,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0070s0067,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0070s0070,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0070s0072,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0072s0054,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0072s0061,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0072s0062,flavonoid pathway,NA,Polyketide/Chalcone synthase,1
+Mapoly0087s0058,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0858s0001,flavonoid pathway,NA,Polyketide/Chalcone synthase,0
+Mapoly0005s0001,flavonoid pathway,NA,3-Ketoacyl-CoA synthase,0
+Mapoly0055s0025,flavonoid pathway,NA,3-Ketoacyl-CoA synthase,0
+Mapoly0055s0027,flavonoid pathway,NA,3-Ketoacyl-CoA synthase,0
+Mapoly0167s0012,flavonoid pathway,NA,Chalcone isomerase,0
+Mapoly0175s0004,flavonoid pathway,NA,Chalcone isomerase-like,1
+Mapoly0011s0046,terpene synthase,MpMTPSL1,Microbial type terpene syntahse,0
+Mapoly0142s0043,terpene synthase,MpMTPSL2,Microbial type terpene syntahse,0
+Mapoly0150s0003,terpene synthase,MpMTPSL3,Microbial type terpene syntahse,0
+Mapoly0058s0116,terpene synthase,MpMTPSL4,Microbial type terpene syntahse,0
+Mapoly0087s0001,terpene synthase,MpMTPSL5,Microbial type terpene syntahse,0
+Mapoly0049s0062,terpene synthase,MpMTPSL6,Microbial type terpene syntahse,1
+Mapoly0034s0087,terpene synthase,MpMTPSL7,Microbial type terpene syntahse,0
+Mapoly0087s0087,terpene synthase,MpMTPSL8,Microbial type terpene syntahse,0
+Mapoly0002s0322,terpene synthase,MpMTPSL9,Microbial type terpene syntahse,0
+Mapoly0034s0055,terpene synthase,MpMTPSL10,Microbial type terpene syntahse,0
+Mapoly0034s0057,terpene synthase,MpMTPSL11,Microbial type terpene syntahse,0
+Mapoly0034s0058,terpene synthase,MpMTPSL12,Microbial type terpene syntahse,0
+Mapoly0034s0068,terpene synthase,MpMTPSL13,Microbial type terpene syntahse,0
+Mapoly0034s0069,terpene synthase,MpMTPSL14,Microbial type terpene syntahse,0
+Mapoly0034s0079,terpene synthase,MpMTPSL15,Microbial type terpene syntahse,0
+Mapoly0034s0083,terpene synthase,MpMTPSL16,Microbial type terpene syntahse,0
+Mapoly0087s0088,terpene synthase,MpMTPSL17,Microbial type terpene syntahse,0
+Mapoly0089s0040,terpene synthase,MpMTPSL18,Microbial type terpene syntahse,0
+Mapoly0150s0002,terpene synthase,MpMTPSL19,Microbial type terpene syntahse,0
+Mapoly0150s0022,terpene synthase,MpMTPSL20,Microbial type terpene syntahse,0
+Mapoly0207s0013,terpene synthase,MpMTPSL21,Microbial type terpene syntahse,0
+Mapoly0223s0001,terpene synthase,MpMTPSL22,Microbial type terpene syntahse,0
+Mapoly0825s0001,terpene synthase,MpMTPSL23,Microbial type terpene syntahse,0
+Mapoly2987s0001,terpene synthase,MpMTPSL24,Microbial type terpene syntahse,0
+Mapoly0030s0159,terpene synthase,MpMTPSL25,Microbial type terpene syntahse,0
+Mapoly0170s0015,terpene synthase,MpMTPSL26,Microbial type terpene syntahse,0
+Mapoly0022s0015,terpene synthase,MpMTPSL27,Microbial type terpene syntahse,0
+Mapoly0039s0024,terpene synthase,MpMTPSL28,Microbial type terpene syntahse,0
+Mapoly0034s0081,terpene synthase,MpMTPSL29,Microbial type terpene syntahse,0
+Mapoly0034s0085,terpene synthase,MpMTPSL30,Microbial type terpene syntahse,0
+Mapoly0034s0088,terpene synthase,MpMTPSL31,Microbial type terpene syntahse,0
+Mapoly0034s0090,terpene synthase,MpMTPSL32,Microbial type terpene syntahse,0
+Mapoly0019s0140,hATPase,MpHA1,Plasma membrane H+-ATPase,0
+Mapoly0089s0056,hATPase,MpHA2,Plasma membrane H+-ATPase,0
+Mapoly0080s0002,hATPase,MpHA3,Plasma membrane H+-ATPase,0
+Mapoly0050s0045,hATPase,MpHA4,Plasma membrane H+-ATPase,0
+Mapoly0050s0042,hATPase,MpHA5,Plasma membrane H+-ATPase,0
+Mapoly0011s0217,hATPase,MpHA6,Plasma membrane H+-ATPase,0
+Mapoly0100s0016,hATPase,MpHA7,Plasma membrane H+-ATPase,0
+Mapoly0125s0027,hATPase,MpHA8,Plasma membrane H+-ATPase,0
+Mapoly0158s0038,hATPase,MpHA9,Plasma membrane H+-ATPase,0
+Mapoly0006s0247,hATPase,MpHA10,Plasma membrane H+-ATPase,0
+Mapoly0006s0246,hATPase,MpHA11,Plasma membrane H+-ATPase,0
+Mapoly0006s0248,hATPase,MpHA12,Plasma membrane H+-ATPase,0
+Mapoly0006s0245,hATPase,MpHA13,Plasma membrane H+-ATPase,0
+Mapoly0050s0043,hATPase,MpHA14,Plasma membrane H+-ATPase,0
+Mapoly0050s0047,hATPase,MpHA15,Plasma membrane H+-ATPase,0
+Mapoly0004s0165,hATPase,MpHA16,Plasma membrane H+-ATPase,0
+Mapoly0049s0123,hATPase,MpHA17,Plasma membrane H+-ATPase,0
+Mapoly0050s0044,hATPase,MpHA18,Plasma membrane H+-ATPase,0
+Mapoly0031s0155,hATPase,MpHA19,Plasma membrane H+-ATPase,0
+Mapoly0028s0085,Lipoxygenase,MpLOX1,NA,1
+Mapoly0191s0014,Lipoxygenase,MpLOX2,NA,0
+Mapoly0006s0130,Lipoxygenase,MpLOX3,NA,0
+Mapoly0106s0031,Lipoxygenase,MpLOX4,NA,0
+Mapoly0001s0529,Lipoxygenase,MpLOX5,NA,0
+Mapoly0023s0182,Lipoxygenase,MpLOX6,NA,0
+Mapoly0026s0145,Lipoxygenase,MpLOX7,NA,0
+Mapoly0026s0148,Lipoxygenase,MpLOX8,NA,0
+Mapoly0055s0019,Lipoxygenase,MpLOX9,NA,0
+Mapoly0063s0014,Lipoxygenase,MpLOX10,NA,0
+Mapoly0063s0050,Lipoxygenase,MpLOX11,NA,0
+Mapoly0064s0034,Lipoxygenase,MpLOX12,NA,0
+Mapoly0079s0056,Lipoxygenase,MpLOX13,NA,0
+Mapoly0083s0028,Lipoxygenase,MpLOX14,NA,0
+Mapoly0191s0015,Lipoxygenase,MpLOX15,NA,0
+Mapoly0420s0001,Lipoxygenase,MpLOX16,NA,0
+Mapoly0003s0031,MAPK,MpMPK3,D,0
+Mapoly0015s0179,MAPK,MpMPK1,A/B,0
+Mapoly0021s0044,MAPK,MpMHK3,MHK3,0
+Mapoly0091s0015,MAPK,MpMPK2,C,0
+Mapoly0111s0043,MAPK,MpMHK1,MHK1,0
+Mapoly0158s0009,MAPK,MpMHK2,MHK2,0
+Mapoly0001s0361,MAPK,MpMKK2,B,0
+Mapoly0015s0047,MAPK,MpMKK1,A,0
+Mapoly0049s0077,MAPK,MpMKK3,C/D,0
+Mapoly0001s0407,MAPK,MAPKKK,C6,0
+Mapoly0003s0063,MAPK,MAPKKK,A3,0
+Mapoly0005s0108,MAPK,MAPKKK,A5,0
+Mapoly0008s0260,MAPK,MAPKKK,C7,0
+Mapoly0010s0118,MAPK,MAPKKK,A5,0
+Mapoly0010s0174,MAPK,MAPKKK,C orphan,0
+Mapoly0013s0150,MAPK,MAPKKK,B4,0
+Mapoly0013s0197,MAPK,MAPKKK,C7,0
+Mapoly0015s0146,MAPK,MAPKKK,C7,0
+Mapoly0020s0024,MAPK,MAPKKK,A1,0
+Mapoly0024s0060,MAPK,MAPKKK,A1,0
+Mapoly0030s0030,MAPK,MAPKKK,A orphan,0
+Mapoly0031s0049,MAPK,MAPKKK,C1,0
+Mapoly0063s0093,MAPK,MAPKKK,B orphan,0
+Mapoly0071s0076,MAPK,MAPKKK,B1,0
+Mapoly0076s0024,MAPK,MAPKKK,C5,0
+Mapoly0077s0063,MAPK,MAPKKK,C2,0
+Mapoly0079s0028,MAPK,MAPKKK,B3,0
+Mapoly0079s0050,MAPK,MAPKKK,B3,0
+Mapoly0085s0091,MAPK,MAPKKK,A2,0
+Mapoly0088s0059,MAPK,MAPKKK,B1,0
+Mapoly0094s0009,MAPK,MAPKKK,A5,0
+Mapoly0099s0014,MAPK,MAPKKK,C2,0
+Mapoly0115s0001,MAPK,MAPKKK,C1,0
+Mapoly0120s0014,MAPK,MAPKKK,A5,0
+Mapoly0123s0018,MAPK,MAPKKK,C2,0
+Mapoly0130s0006,MAPK,MAPKKK,D,0
+Mapoly0140s0044,MAPK,MAPKKK,A4,0
+Mapoly0154s0032,MAPK,MAPKKK,B3,0
+Mapoly0187s0006,MAPK,MAPKKK,C3,0
+Mapoly0192s0004,MAPK,MAPKKK,B2,0
+Mapoly_CUFFY.49.3,MAPK,MAPKKK,A6,0
+Mapoly0001s0020,TF,MpTRIHELIX1,Trihelix,0
+Mapoly0001s0021,TF,MpBZIP1,bZIP,0
+Mapoly0001s0061,TF,MpR2R3-MYB1,MYB,0
+Mapoly0001s0192,TF,MpCDF,Dof,0
+Mapoly0001s0259,TF,MpBHLH27,bHLH,0
+Mapoly0001s0298,TF,MpTCP2,bHLH ,0
+Mapoly0001s0312,TF,MpTRIHELIX2,Trihelix,0
+Mapoly0001s0385,TF,MpGRAS1,GRAS,0
+Mapoly0001s0480,TF,MpRR-MYB1,MYB,0
+Mapoly0002s0032,TF,MpTRIHELIX3,Trihelix,0
+Mapoly0002s0172,TF,MpTRIHELIX4,Trihelix,0
+Mapoly0002s0204,TF,MpTRIHELIX5,Trihelix,0
+Mapoly0002s0271,TF,MpGEBP1,GeBP,0
+Mapoly0003s0147,TF,MpGARP5,GARP,0
+Mapoly0003s0164,TF,MpTRIHELIX6,Trihelix,0
+Mapoly0003s0245,TF,MpC2H2-1,C2H2-ZnF,0
+Mapoly0003s0271,TF,MpGRAS2,GRAS,0
+Mapoly0003s0288,TF,MpTRIHELIX7,Trihelix,0
+Mapoly0004s0047,TF,MpASLBD1,ASL/LBD,0
+Mapoly0004s0169,TF,Mp1R-MYB1,MYB,0
+Mapoly0005s0077,TF,MpGATA1,GATA,0
+Mapoly0005s0152,TF,MpCCAAT-NFYC1,CCAAT-NFYC,0
+Mapoly0005s0159,TF,MpHD1,HD,0
+Mapoly0005s0203,TF,MpCSD,CSD,0
+Mapoly0005s0212,TF,MpGATA2,GATA,0
+Mapoly0005s0280,TF,MpLIM1,LIM-domain,0
+Mapoly0006s0064,TF,MpC2H2-2,C2H2-ZnF,0
+Mapoly0006s0154,TF,MpHD2,HD,0
+Mapoly0006s0226,TF,MpR2R3-MYB2,MYB,0
+Mapoly0007s0001,TF,MpWRKY1,WRKY,0
+Mapoly0007s0033,TF,Mp1R-MYB2,MYB,0
+Mapoly0007s0056,TF,MpBZIP2,bZIP,0
+Mapoly0007s0221,TF,MpHD3,HD,0
+Mapoly0007s0265,TF,MpR2R3-MYB3,MYB,0
+Mapoly0007s0271,TF,MpR2R3-MYB4,MYB,0
+Mapoly0008s0016,TF,Mp1R-MYB3,MYB,0
+Mapoly0008s0029,TF,MpR2R3-MYB5,MYB,0
+Mapoly0008s0060,TF,MpASLBD2,ASL/LBD,0
+Mapoly0008s0071,TF,MpAP2L1,AP2/ERF,0
+Mapoly0008s0159,TF,MpWRKY2,WRKY,0
+Mapoly0009s0010,TF,Mp1R-MYB4,MYB,0
+Mapoly0009s0013,TF,MpAP2L2,AP2/ERF,0
+Mapoly0009s0061,TF,MpERF2,AP2/ERF,0
+Mapoly0009s0166,TF,MpASLBD3,ASL/LBD,0
+Mapoly0011s0011,TF,MpTRIHELIX8,Trihelix,0
+Mapoly0011s0037,TF,MpASLBD4,ASL/LBD,0
+Mapoly0011s0057,TF,MpTRIHELIX9,Trihelix,0
+Mapoly0011s0122,TF,MpC2H2-3,C2H2-ZnF,0
+Mapoly0011s0167,TF,MpB3-1,B3,0
+Mapoly0011s0176,TF,MpNAC3,NAC,0
+Mapoly0011s0205,TF,MpHSF1,HSF,0
+Mapoly0012s0026,TF,MpBHLH25,bHLH,0
+Mapoly0012s0090,TF,MpHD4,HD,0
+Mapoly0012s0172,TF,MpBZIP3,bZIP,0
+Mapoly0012s0202,TF,MpBHLH24,bHLH,0
+Mapoly0013s0027,TF,MpHD5,HD,0
+Mapoly0013s0048,TF,MpHMGBOX1,HMG-box,0
+Mapoly0013s0054,TF,MpBZR1,BZR/BES,0
+Mapoly0013s0062,TF,MpARID1,ARID,0
+Mapoly0013s0135,TF,MpTRIHELIX10,Trihelix,0
+Mapoly0013s0145,TF,Mp1R-MYB5,MYB,0
+Mapoly0013s0167,TF,MpBHLH51,bHLH,0
+Mapoly0013s0172,TF,MpIDDL1,IDD-related,0
+Mapoly0014s0060,TF,MpHD6,HD,0
+Mapoly0014s0183,TF,MpGRAS3,GRAS,0
+Mapoly0014s0193,TF,Mp1R-MYB6,MYB,0
+Mapoly0014s0195,TF,MpCDC5,MYB,0
+Mapoly0015s0001,TF,MpBHLH30,bHLH,0
+Mapoly0015s0003,TF,MpBHLH29,bHLH,0
+Mapoly0015s0005,TF,MpBZIP4,bZIP,0
+Mapoly0015s0058,TF,MpNAC1,NAC,0
+Mapoly0015s0121,TF,MpTRIHELIX11,Trihelix,0
+Mapoly0015s0164,TF,MpB3-2,B3,0
+Mapoly0016s0064,TF,MpC2H2-4,C2H2-ZnF,0
+Mapoly0016s0098,TF,MpBZIP5,bZIP,0
+Mapoly0016s0110,TF,MpBHLH18,bHLH,0
+Mapoly0017s0009,TF,MpGATA3,GATA,0
+Mapoly0018s0001,TF,MpHSF2,HSF,0
+Mapoly0018s0011,TF,MpBPC1,BBR/BPC,0
+Mapoly0018s0018,TF,"MpBHLH26, MpMYCX1","bHLH, MYC",0
+Mapoly0018s0019,TF,MpMYCX2,MYC ,0
+Mapoly0019s0040,TF,MpBZIP6,bZIP,0
+Mapoly0019s0045,TF,MpB3-3,B3,0
+Mapoly0019s0071,TF,MpR2R3-MYB6,MYB,0
+Mapoly0019s0096,TF,MpBZR2,BZR/BES,0
+Mapoly0019s0115,TF,MpC2H2-5,C2H2-ZnF,0
+Mapoly0019s0144,TF,MpCCAAT-NFYA,CCAAT-NFYA,0
+Mapoly0020s0001,TF,MpERF3,AP2/ERF,0
+Mapoly0020s0013,TF,Mp1R-MYB7,MYB,0
+Mapoly0020s0051,TF,MpNAC4,NAC,0
+Mapoly0021s0100,TF,MpBHLH8,bHLH,0
+Mapoly0021s0101,TF,MpBHLH9,bHLH,0
+Mapoly0022s0028,TF,Mp1R-MYB8,MYB,0
+Mapoly0022s0032,TF,MpGARP1,GARP,0
+Mapoly0022s0095,TF,MpBZIP7,bZIP,0
+Mapoly0022s0128,TF,MpRKD,RWP-RK domain (RKD)-containing ,0
+Mapoly0023s0075,TF,MpERF4,AP2/ERF,0
+Mapoly0023s0081,TF,MpHD7,HD,0
+Mapoly0023s0090,TF,Mp1R-MYB9,MYB,0
+Mapoly0023s0101,TF,MpR2R3-MYB7,MYB,0
+Mapoly0023s0118,TF,MpCXC1,CXC,0
+Mapoly0024s0094,TF,MpR2R3-MYB8,MYB,0
+Mapoly0024s0106,TF,MpBHLH20,bHLH,0
+Mapoly0025s0044,TF,MpBHLH49,bHLH,0
+Mapoly0025s0112,TF,MpTRIHELIX12,Trihelix,0
+Mapoly0026s0039,TF,MpBZIP8,bZIP,0
+Mapoly0026s0070,TF,MpRR-MYB2,MYB,0
+Mapoly0026s0095,TF,MpERF5,AP2/ERF,0
+Mapoly0026s0097,TF,MpERF6,AP2/ERF,0
+Mapoly0026s0138,TF,MpHMGBOX2,HMG-box,0
+Mapoly0027s0033,TF,MpBBX1,BBX,0
+Mapoly0027s0069,TF,MpWRKY3,WRKY,0
+Mapoly0028s0058,TF,MpBHLH4,bHLH,0
+Mapoly0028s0060,TF,MpBHLH3,bHLH,0
+Mapoly0028s0062,TF,MpBHLH2,bHLH,0
+Mapoly0028s0100,TF,MpBHLH48,bHLH,0
+Mapoly0028s0101,TF,MpBHLH47,bHLH,0
+Mapoly0029s0015,TF,MpHD8,HD,0
+Mapoly0029s0022,TF,MpC2H2-6,C2H2-ZnF,0
+Mapoly0029s0079,TF,MpALFIN1,Alfin1-like,0
+Mapoly0029s0130,TF,MpBHLH34,bHLH,0
+Mapoly0029s0135,TF,MpBHLH33,bHLH,0
+Mapoly0029s0145,TF,MpHD9,HD,0
+Mapoly0030s0009,TF,MpHMGBOX3,HMG-box,0
+Mapoly0030s0035,TF,MpLIM2,LIM-domain,0
+Mapoly0030s0125,TF,MpARID2,ARID,0
+Mapoly0030s0141,TF,MpBHLH22,bHLH,0
+Mapoly0031s0041,TF,MpGRAS4,GRAS,0
+Mapoly0031s0059,TF,MpHMGBOX4,HMG-box,0
+Mapoly0031s0072,TF,MpBHLH35,bHLH,0
+Mapoly0031s0074,TF,MpBHLH36,bHLH,0
+Mapoly0031s0075,TF,MpBHLH50,bHLH,0
+Mapoly0031s0076,TF,MpBHLH37,bHLH,0
+Mapoly0031s0161,TF,MpBHLH12,bHLH,0
+Mapoly0031s0170,TF,MpWRKY4,WRKY,0
+Mapoly0032s0010,TF,MpHD10,HD,0
+Mapoly0032s0097,TF,MpTRIHELIX13,Trihelix,0
+Mapoly0032s0153,TF,MpR2R3-MYB9,MYB,0
+Mapoly0033s0004,TF,MpHD11,HD,0
+Mapoly0033s0095,TF,MpIDDL2,IDD-related,0
+Mapoly0034s0029,TF,MpERF7,AP2/ERF,0
+Mapoly0034s0034,TF,MpR2R3-MYB10,MYB,0
+Mapoly0034s0053,TF,MpBHLH32,bHLH,0
+Mapoly0034s0126,TF,MpBZIP9,bZIP,0
+Mapoly0035s0046,TF,MpNAC2,NAC,0
+Mapoly0035s0049,TF,MpNAC7,NAC,0
+Mapoly0035s0054,TF,MpNAC8,NAC,0
+Mapoly0035s0146,TF,MpBHLH5,bHLH,0
+Mapoly0036s0107,TF,Mp3R-MYB1,MYB,0
+Mapoly0036s0109,TF,MpNFX1-1,NF-X1,0
+Mapoly0036s0129,TF,MpWRKY5,WRKY,0
+Mapoly0036s0136,TF,MpWRKY6,WRKY,0
+Mapoly0037s0007,TF,MpBHLH21,bHLH,0
+Mapoly0037s0099,TF,MpTRIHELIX14,Trihelix,0
+Mapoly0037s0113,TF,MpTRIHELIX15,Trihelix,0
+Mapoly0037s0146,TF,MpTRIHELIX16,Trihelix,0
+Mapoly0038s0058,TF,MpBHLH15,bHLH,0
+Mapoly0038s0075,TF,MpERF8,AP2/ERF,0
+Mapoly0038s0096,TF,MpCXC2,CXC,0
+Mapoly0039s0003,TF,MpBHLH14,bHLH,0
+Mapoly0039s0030,TF,MpWRKY7,WRKY,0
+Mapoly0039s0059,TF,MpBHLH6,bHLH,0
+Mapoly0039s0068,TF,MpBHLH7,bHLH,0
+Mapoly0040s0004,TF,MpR2R3-MYB11,MYB,0
+Mapoly0040s0112,TF,MpBHLH13,bHLH,0
+Mapoly0040s0116,TF,MpWRKY8,WRKY,0
+Mapoly0040s0134,TF,MpDOF1,Dof,0
+Mapoly0041s0025,TF,MpERF9,AP2/ERF,0
+Mapoly0041s0098,TF,MpC2H2-7,C2H2-ZnF,0
+Mapoly0041s0104,TF,MpTRIHELIX17,Trihelix,0
+Mapoly0042s0058,TF,Mp1R-MYB11,MYB,0
+Mapoly0042s0072,TF,MpRR-MYB3,MYB,0
+Mapoly0043s0010,TF,MpTRIHELIX18,Trihelix,0
+Mapoly0043s0095,TF,Mp1R-MYB12,MYB,0
+Mapoly0043s0098,TF,MpB3-4,B3,0
+Mapoly0043s0128,TF,MpARID-HMGBOX,ARID-HMGbox,0
+Mapoly0045s0043,TF,Mp1R-MYB13,MYB,0
+Mapoly0046s0038,TF,MpERF10,AP2/ERF,0
+Mapoly0046s0060,TF,MpASLBD5,ASL/LBD,0
+Mapoly0046s0102,TF,MpBZIP10,bZIP,0
+Mapoly0047s0034,TF,MpGRAS5,GRAS,0
+Mapoly0047s0121,TF,MpGIF,GIF,0
+Mapoly0048s0045,TF,MpAP2L3,AP2/ERF,0
+Mapoly0048s0099,TF,MpBHLH42,bHLH,0
+Mapoly0049s0030,TF,MpBBX2,BBX,0
+Mapoly0049s0067,TF,MpBBX3,BBX,0
+Mapoly0050s0010,TF,MpDP1,E2F/DP/DEL,0
+Mapoly0050s0090,TF,MpASLBD24,ASL/LBD,0
+Mapoly0051s0025,TF,MpHMGBOX5,HMG-box,0
+Mapoly0051s0029,TF,MpTRIHELIX19,Trihelix,0
+Mapoly0051s0040,TF,MpERF11,AP2/ERF,0
+Mapoly0051s0057,TF,MpWRKY9,WRKY,0
+Mapoly0051s0062,TF,MpASLBD6,ASL/LBD,0
+Mapoly0053s0002,TF,MpERF12,AP2/ERF,0
+Mapoly0053s0058,TF,MpCCAAT-NFYC2,CCAAT-NFYC,0
+Mapoly0054s0021,TF,MpBHLH11,bHLH,0
+Mapoly0055s0052,TF,MpBHLH45,bHLH,0
+Mapoly0056s0059,TF,MpTRIHELIX20,Trihelix,0
+Mapoly0056s0127,TF,MpR2R3-MYB12,MYB,0
+Mapoly0057s0012,TF,MpWRKY10,WRKY,0
+Mapoly0057s0042,TF,MpTRIHELIX21,Trihelix,0
+Mapoly0058s0005,TF,Mp3R-MYB2,MYB,0
+Mapoly0058s0031,TF,MpIDDL3,IDD-related,0
+Mapoly0058s0044,TF,MpGRAS6,GRAS,0
+Mapoly0058s0090,TF,MpASLBD7,ASL/LBD,0
+Mapoly0060s0052,TF,MpERF13,AP2/ERF,0
+Mapoly0060s0092,TF,MpASLBD8,ASL/LBD,0
+Mapoly0061s0023,TF,MpC2H2-8,C2H2-ZnF,0
+Mapoly0061s0030,TF,MpWRKY11,WRKY,0
+Mapoly0061s0069,TF,Mp4R-MYB1,MYB,0
+Mapoly0061s0107,TF,MpHD12,HD,0
+Mapoly0062s0083,TF,MpARID3,ARID,0
+Mapoly0063s0098,TF,MpHD13,HD,0
+Mapoly0064s0023,TF,MpGRAS7,GRAS,0
+Mapoly0064s0079,TF,MpBBX4,BBX,0
+Mapoly0065s0031,TF,MpALFIN2,Alfin1-like,0
+Mapoly0065s0047,TF,MpTRIHELIX22,Trihelix,0
+Mapoly0065s0089,TF,MpGRAS8,GRAS,0
+Mapoly0066s0103,TF,MpERF14,AP2/ERF,0
+Mapoly0068s0079,TF,MpC2H2-9,C2H2-ZnF,0
+Mapoly0068s0088,TF,MpERF15,AP2/ERF,0
+Mapoly0068s0102,TF,MpTCP1,bHLH ,0
+Mapoly0069s0009,TF,"MpABI5A, MpBZIP11",bZIP ,0
+Mapoly0069s0060,TF,MpC2H2-10,C2H2-ZnF,0
+Mapoly0069s0069,TF,MpHD14,HD,0
+Mapoly0069s0082,TF,MpC2H2-11,C2H2-ZnF,0
+Mapoly0070s0095,TF,MpC2H2-12,C2H2-ZnF,0
+Mapoly0072s0031,TF,MpBZR3,BZR/BES,0
+Mapoly0072s0050,TF,"MpABI5B, MpBZIP12",bZIP ,0
+Mapoly0072s0075,TF,MpR2R3-MYB13,MYB,0
+Mapoly0072s0102,TF,MpAP2B3-1,AP2-B3,0
+Mapoly0073s0038,TF,MpR2R3-MYB14,MYB,0
+Mapoly0073s0051,TF,MpBHLH40,bHLH,0
+Mapoly0073s0059,TF,MpBHLH39,bHLH,0
+Mapoly0074s0026,TF,MpB3-5,B3,0
+Mapoly0074s0047,TF,MpGATA4,GATA,0
+Mapoly0074s0081,TF,MpCAMTA,CAMTA,0
+Mapoly0075s0051,TF,Mp1R-MYB14,MYB,0
+Mapoly0076s0039,TF,MpIDDL4,IDD-related,0
+Mapoly0078s0019,TF,MpGEBP2,GeBP,0
+Mapoly0078s0020,TF,MpGEBP3,GeBP,0
+Mapoly0079s0052,TF,Mp1R-MYB15,MYB,0
+Mapoly0080s0037,TF,MpASLBD9,ASL/LBD,0
+Mapoly0080s0053,TF,MpLIM3,LIM-domain,0
+Mapoly0080s0093,TF,MpHD15,HD,0
+Mapoly0083s0007,TF,MpGRAS11,GRAS,0
+Mapoly0083s0069,TF,MpIDDL5,IDD-related,0
+Mapoly0084s0032,TF,MpASLBD10,ASL/LBD,0
+Mapoly0084s0051,TF,MpCXC3,CXC,0
+Mapoly0084s0085,TF,Mp1R-MYB16,MYB,0
+Mapoly0085s0044,TF,MpC2H2-13,C2H2-ZnF,0
+Mapoly0085s0092,TF,MpR2R3-MYB15,MYB,0
+Mapoly0086s0035,TF,"MpB3-6, MpABI3A",B3-domain TF abscisic acid-insensitive 3,0
+Mapoly0086s0046,TF,MpNAC9,NAC,0
+Mapoly0086s0081,TF,MpTRIHELIX23,Trihelix,0
+Mapoly0088s0024,TF,MpEIL,EIL,0
+Mapoly0088s0049,TF,MpBHLH19,bHLH,0
+Mapoly0089s0067,TF,MpC2H2-14,C2H2-ZnF,0
+Mapoly0090s0001,TF,MpERF16,AP2/ERF,0
+Mapoly0090s0002,TF,MpERF17,AP2/ERF,0
+Mapoly0090s0091,TF,Mp1R-MYB17,MYB,0
+Mapoly0091s0008,TF,MpBHLH28,bHLH,0
+Mapoly0091s0012,TF,Mp1R-MYB18,MYB,0
+Mapoly0091s0063,TF,MpNAC5,NAC,0
+Mapoly0092s0004,TF,Mp1R-MYB19,MYB,0
+Mapoly0092s0005,TF,MpR2R3-MYB16,MYB,0
+Mapoly0092s0058,TF,MpERF18,AP2/ERF,0
+Mapoly0093s0018,TF,MpASLBD11,ASL/LBD,0
+Mapoly0093s0028,TF,MpHD16,HD,0
+Mapoly0093s0032,TF,MpAP2B3-2,AP2-B3,0
+Mapoly0093s0069,TF,MpASLBD12,ASL/LBD,0
+Mapoly0094s0004,TF,MpARID4,ARID,0
+Mapoly0095s0037,TF,MpC2H2-15,C2H2-ZnF,0
+Mapoly0095s0046,TF,MpGATA5,GATA,0
+Mapoly0096s0050,TF,MpIDDL6,IDD-related,0
+Mapoly0096s0058,TF,MpR2R3-MYB17,MYB,0
+Mapoly0097s0062,TF,MpASLBD13,ASL/LBD,0
+Mapoly0098s0044,TF,MpGARP3,GARP,0
+Mapoly0098s0046,TF,MpBHLH10,bHLH,0
+Mapoly0100s0033,TF,MpBHLH41,bHLH,0
+Mapoly0101s0006,TF,MpRRB,"cytokinin response regulator, type-B; GARP",0
+Mapoly0101s0068,TF,MpGARP7,GARP,0
+Mapoly0102s0028,TF,MpATHOOK1,AThook,0
+Mapoly0104s0012,TF,MpTZF,TZF,0
+Mapoly0107s0039,TF,MpTRIHELIX24,Trihelix,0
+Mapoly0110s0001,TF,MpC2H2-16,C2H2-ZnF,0
+Mapoly0110s0028,TF,MpBBX5,BBX,0
+Mapoly0113s0037,TF,MpE2F,E2F/DP/DEL,0
+Mapoly0113s0052,TF,MpTRIHELIX25,Trihelix,0
+Mapoly0113s0058,TF,MpTRIHELIX26,Trihelix,0
+Mapoly0114s0007,TF,MpRR-MYB4,MYB,0
+Mapoly0114s0037,TF,MpBHLH23,bHLH,0
+Mapoly0115s0048,TF,MpGARP4,GARP,0
+Mapoly0119s0041,TF,MpGARP6,GARP,0
+Mapoly0119s0048,TF,MpTRIHELIX27,Trihelix,0
+Mapoly0120s0051,TF,MpDP2,E2F/DP/DEL,0
+Mapoly0122s0020,TF,MpBZIP13,bZIP,0
+Mapoly0122s0029,TF,MpBBX6,BBX,0
+Mapoly0122s0030,TF,MpTRIHELIX28,Trihelix,0
+Mapoly0123s0012,TF,MpR2R3-MYB18,MYB,0
+Mapoly0124s0021,TF,MpBHLH1,bHLH,0
+Mapoly0124s0064,TF,MpERF19,AP2/ERF,0
+Mapoly0125s0019,TF,MpDP3,E2F/DP/DEL,0
+Mapoly0126s0029,TF,MpBHLH38,bHLH,0
+Mapoly0129s0052,TF,MpATHOOK2,AThook,0
+Mapoly0130s0023,TF,MpTRIHELIX29,Trihelix,0
+Mapoly0130s0030,TF,MpBZIP14,bZIP,0
+Mapoly0130s0035,TF,MpTRIHELIX30,Trihelix,0
+Mapoly0132s0008,TF,MpHD17,HD,0
+Mapoly0132s0016,TF,MpTRIHELIX31,Trihelix,0
+Mapoly0132s0029,TF,Mp3R-MYB3,MYB,0
+Mapoly0132s0031,TF,Mp3R-MYB4,MYB,0
+Mapoly0136s0025,TF,MpERF20,AP2/ERF,0
+Mapoly0138s0004,TF,MpCBF5,CBF5,0
+Mapoly0142s0034,TF,MpTRIHELIX32,Trihelix,0
+Mapoly0143s0011,TF,MpRR-MYB5,MYB,0
+Mapoly0144s0031,TF,MpAP2L4,AP2/ERF,0
+Mapoly0144s0032,TF,MpAP2L5,AP2/ERF,0
+Mapoly0144s0033,TF,MpAP2L6,AP2/ERF,0
+Mapoly0148s0001,TF,MpPPP1,PPP1,0
+Mapoly0150s0001,TF,Mp3R-MYB5,MYB,0
+Mapoly0150s0015,TF,MpBHLH16,bHLH,0
+Mapoly0150s0016,TF,MpBHLH17,bHLH,0
+Mapoly0151s0042,TF,MpATHOOK3,AThook,0
+Mapoly0152s0027,TF,MpASLBD14,ASL/LBD,0
+Mapoly0153s0037,TF,MpC2H2-17,C2H2-ZnF,1
+Mapoly0153s0039,TF,MpASLBD15,ASL/LBD,0
+Mapoly0154s0047,TF,MpNFX1-2,NF-X1,0
+Mapoly0155s0008,TF,MpTRIHELIX33,Trihelix,0
+Mapoly0156s0007,TF,MpGARP8,GARP,0
+Mapoly0156s0012,TF,MpHD18,HD,0
+Mapoly0157s0009,TF,MpGARP2,GARP,0
+Mapoly0158s0003,TF,MpRR-MYB6,MYB,0
+Mapoly0159s0017,TF,MpTRIHELIX34,Trihelix,0
+Mapoly0159s0028,TF,MpTRIHELIX35,Trihelix,0
+Mapoly0159s0029,TF,MpDEL1,E2F/DP/DEL,0
+Mapoly0162s0001,TF,MpWRKY12,WRKY,0
+Mapoly0162s0003,TF,MpWRKY13,WRKY,0
+Mapoly0162s0017,TF,Mp1R-MYB20,MYB,0
+Mapoly0166s0010,TF,MpERF21,AP2/ERF,0
+Mapoly0166s0022,TF,Mp3R-MYB6,MYB,0
+Mapoly0168s0004,TF,MpGEBP4,GeBP,0
+Mapoly0168s0007,TF,MpCCAAT-NFYC3,CCAAT-NFYC,0
+Mapoly0173s0030,TF,MpASLBD16,ASL/LBD,0
+Mapoly0174s0004,TF,MpBHLH44,bHLH,0
+Mapoly0174s0007,TF,MpHD19,HD,0
+Mapoly0175s0015,TF,MpNAC6,NAC,0
+Mapoly0175s0020,TF,MpHD20,HD,0
+Mapoly0176s0008,TF,MpASLBD17,ASL/LBD,0
+Mapoly0178s0023,TF,MpTRIHELIX36,Trihelix,0
+Mapoly0183s0010,TF,MpB3-7,B3,0
+Mapoly0184s0008,TF,MpTRIHELIX37,Trihelix,0
+Mapoly0194s0001,TF,MpHD21,HD,0
+Mapoly0194s0011,TF,MpGRAS9,GRAS,0
+Mapoly0198s0008,TF,MpDEL2,E2F/DP/DEL,0
+Mapoly0210s0005,TF,Mp3R-MYB7,MYB,0
+Mapoly0213s0014,TF,MpHD22,HD,0
+Mapoly0214s0002,TF,MpCCAAT-NFYB1,CCAAT-NFYB,0
+Mapoly0216s0010,TF,MpCCAAT-NFYB2,CCAAT-NFYB,0
+Mapoly0223s0002,TF,MpERF22,AP2/ERF,0
+Mapoly0229s0008,TF,MpTRIHELIX38,Trihelix,0
+Mapoly0232s0001,TF,MpBHLH31,bHLH,0
+Mapoly0240s0002,TF,Mp3R-MYB8,MYB,0
+Mapoly0250s0002,TF,Mp1R-MYB21,MYB,0
+Mapoly0293s0001,TF,MpERF23,AP2/ERF,0
+Mapoly0318s0001,TF,MpR2R3-MYB19,MYB,0
+Mapoly0330s0001,TF,Mp3R-MYB9,MYB,0
+Mapoly0467s0001,TF,MpWRKY14,WRKY,0
+Mapoly0474s0001,TF,MpB3-8,B3,0
+Mapoly0502s0001,TF,MpBHLH43,bHLH,0
+Mapoly0721s0001,TF,MpASLBD18,ASL/LBD,0
+Mapoly0737s0001,TF,MpBZIP15,bZIP,0
+Mapoly0811s0001,TF,Mp1R-MYB22,MYB,0
+Mapoly0817s0001,TF,MpASLBD19,ASL/LBD,0
+Mapoly0874s0001,TF,MpR2R3-MYB20,MYB,0
+Mapoly1089s0002,TF,MpR2R3-MYB21,MYB,0
+Mapoly1185s0001,TF,MpASLBD20,ASL/LBD,0
+Mapoly1350s0001,TF,MpGRF,GRF,0
+Mapoly1480s0001,TF,MpAP2L7,AP2/ERF,0
+Mapoly1576s0001,TF,MpGRAS10,GRAS,0
+Mapoly1803s0001,TF,MpASLBD21,ASL/LBD,0
+Mapoly3661s0001,TF,MpASLBD22,ASL/LBD,0
+MapolyY_B0005,TF,MpHSF3,HSF,0
+MapolyY_B0017,TF,MpBPC2,BBR/BPC,0
+MapolyY_B0018,TF,"MpBHLH46, MpMYCY","bHLH, MYC",0
+MapolyY_B0021,TF,MpGATA6,GATA,0
+Mapoly0097s0003,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly1436s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0022s0189,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0036s0140,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0004s0258,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0010,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0036s0139,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0351s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0023s0160,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0007,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly2869s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly2589s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0036s0065,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0590s0002,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0004s0260,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly2150s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0009s0081,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0004,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0046s0080,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0092s0052,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0036s0063,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0199s0010,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0117s0024,PR,PR1,Cysteine-rich secretory protein family,1
+Mapoly1736s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0006,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0004s0261,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0855s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0021s0114,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0092s0055,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0089s0027,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0001,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0011,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0097s0005,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0021s0004,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0003s0255,PR,PR1,Cysteine-rich secretory protein family,0
+Mapoly0042s0097,PR,PR2,Glycosyl hydrolases family 17,1
+Mapoly1717s0001,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0149s0034,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0557s0001,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0026s0147,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0026s0146,PR,PR2,Glycosyl hydrolases family 17,1
+Mapoly0009s0004,PR,PR2,Glycosyl hydrolases family 17,1
+Mapoly0042s0095,PR,PR2,Glycosyl hydrolases family 17,1
+Mapoly0026s0149,PR,PR2,Glycosyl hydrolases family 17,1
+Mapoly0104s0030,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0026s0144,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0014s0109,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0051s0021,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0074s0006,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0031s0056,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0059s0025,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0009s0003,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0050s0050,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0112s0010,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0015s0161,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0208s0003,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0042s0094,PR,PR2,Glycosyl hydrolases family 17,1
+Mapoly0016s0036,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0033s0034,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0074s0005,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0030s0076,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0009s0002,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0042s0077,PR,PR2,Glycosyl hydrolases family 17,0
+Mapoly0116s0045,PR,PR3,Chitin recognition protein/Chitinase class I,0
+Mapoly0069s0092,PR,PR3,Chitin recognition protein/Chitinase class I,1
+Mapoly0069s0089,PR,PR3,Chitin recognition protein/Chitinase class I,0
+Mapoly0098s0022,PR,PR3,Chitin recognition protein/Chitinase class I,0
+Mapoly0116s0046,PR,PR3,Chitin recognition protein/Chitinase class I,0
+Mapoly0044s0030,PR,PR3,Chitin recognition protein/Chitinase class I,0
+Mapoly0116s0048,PR,PR3,Chitin recognition protein/Chitinase class I,0
+Mapoly0040s0024,PR,PR4,Barwin family,0
+Mapoly0033s0148,PR,PR5,Thaumatin family,0
+Mapoly0097s0012,PR,PR5,Thaumatin family,0
+Mapoly0180s0023,PR,PR5,Thaumatin family,0
+Mapoly0042s0015,PR,PR5,Thaumatin family,0
+Mapoly0042s0016,PR,PR5,Thaumatin family,0
+Mapoly0097s0008,PR,PR5,Thaumatin family,0
+Mapoly0069s0093,PR,PR5,Thaumatin family,0
+Mapoly0097s0002,PR,PR5,Thaumatin family,0
+Mapoly0097s0013,PR,PR5,Thaumatin family,0
+Mapoly0023s0012,PR,PR5,Thaumatin family,0
+Mapoly0226s0001,PR,PR5,Thaumatin family,0
+Mapoly0042s0018,PR,PR5,Thaumatin family,0
+Mapoly0866s0001,PR,PR5,Thaumatin family,0
+Mapoly2282s0001,PR,PR5,Thaumatin family,0
+Mapoly0069s0095,PR,PR5,Thaumatin family,0
+Mapoly0002s0336,PR,PR5,Thaumatin family,0
+Mapoly0448s0001,PR,PR6,Potato inhibitor I family,1
+Mapoly0008s0001,PR,PR6,Potato inhibitor I family,1
+Mapoly0085s0017,PR,PR6,Potato inhibitor I family,0
+Mapoly0178s0026,PR,PR6,Potato inhibitor I family,0
+Mapoly0008s0045,PR,PR6,Potato inhibitor I family,0
+Mapoly0029s0148,PR,PR6,Potato inhibitor I family,0
+Mapoly0008s0258,PR,PR6,Potato inhibitor I family,1
+Mapoly0013s0084,PR,PR7,Subtilase family,0
+Mapoly0060s0111,PR,PR7,Subtilase family,0
+Mapoly0004s0174,PR,PR7,Subtilase family,0
+Mapoly0050s0101,PR,PR7,Subtilase family,0
+Mapoly0047s0075,PR,PR7,Subtilase family,0
+Mapoly0040s0059,PR,PR7,Subtilase family,0
+Mapoly0040s0057,PR,PR7,Subtilase family,0
+Mapoly0136s0006,PR,PR7,Subtilase family,0
+Mapoly0155s0018,PR,PR7,Subtilase family,0
+Mapoly0053s0099,PR,PR7,Subtilase family,0
+Mapoly0069s0029,PR,PR7,Subtilase family,0
+Mapoly0098s0026,PR,PR7,Subtilase family,0
+Mapoly0059s0076,PR,PR7,Subtilase family,0
+Mapoly0040s0056,PR,PR7,Subtilase family,0
+Mapoly0135s0003,PR,PR7,Subtilase family,0
+Mapoly0047s0048,PR,PR9,Peroxidase,0
+Mapoly0161s0037,PR,PR9,Peroxidase,0
+Mapoly0124s0002,PR,PR9,Peroxidase,0
+Mapoly0040s0117,PR,PR9,Peroxidase,0
+Mapoly0064s0027,PR,PR9,Peroxidase,0
+Mapoly0032s0142,PR,PR9,Peroxidase,0
+Mapoly0188s0011,PR,PR9,Peroxidase,0
+Mapoly0220s0003,PR,PR9,Peroxidase,1
+Mapoly0032s0069,PR,PR9,Peroxidase,0
+Mapoly0047s0002,PR,PR9,Peroxidase,0
+Mapoly0039s0113,PR,PR9,Peroxidase,0
+Mapoly0032s0056,PR,PR9,Peroxidase,0
+Mapoly0221s0009,PR,PR9,Peroxidase,0
+Mapoly0042s0112,PR,PR9,Peroxidase,0
+Mapoly0133s0056,PR,PR9,Peroxidase,0
+Mapoly1623s0002,PR,PR9,Peroxidase,0
+Mapoly2709s0001,PR,PR9,Peroxidase,0
+Mapoly0136s0035,PR,PR9,Peroxidase,0
+Mapoly0070s0094,PR,PR9,Peroxidase,0
+Mapoly0175s0024,PR,PR9,Peroxidase,0
+Mapoly0143s0041,PR,PR9,Peroxidase,0
+Mapoly0032s0068,PR,PR9,Peroxidase,0
+Mapoly0043s0075,PR,PR9,Peroxidase,0
+Mapoly0091s0041,PR,PR9,Peroxidase,0
+Mapoly0243s0001,PR,PR9,Peroxidase,0
+Mapoly0171s0001,PR,PR9,Peroxidase,0
+Mapoly0084s0001,PR,PR9,Peroxidase,0
+Mapoly0182s0025,PR,PR9,Peroxidase,0
+Mapoly0008s0232,PR,PR9,Peroxidase,0
+Mapoly0117s0003,PR,PR9,Peroxidase,0
+Mapoly0030s0090,PR,PR9,Peroxidase,0
+Mapoly0195s0010,PR,PR9,Peroxidase,0
+Mapoly0124s0038,PR,PR9,Peroxidase,0
+Mapoly0048s0002,PR,PR9,Peroxidase,0
+Mapoly0039s0115,PR,PR9,Peroxidase,0
+Mapoly0057s0094,PR,PR9,Peroxidase,0
+Mapoly0011s0055,PR,PR9,Peroxidase,0
+Mapoly0161s0039,PR,PR9,Peroxidase,0
+Mapoly0410s0003,PR,PR9,Peroxidase,0
+Mapoly0196s0012,PR,PR9,Peroxidase,0
+Mapoly0019s0014,PR,PR9,Peroxidase,0
+Mapoly0077s0042,PR,PR9,Peroxidase,0
+Mapoly0050s0029,PR,PR9,Peroxidase,0
+Mapoly0182s0001,PR,PR9,Peroxidase,0
+Mapoly0282s0001,PR,PR9,Peroxidase,0
+Mapoly0243s0003,PR,PR9,Peroxidase,0
+Mapoly0992s0001,PR,PR9,Peroxidase,0
+Mapoly0087s0010,PR,PR9,Peroxidase,0
+Mapoly0245s0004,PR,PR9,Peroxidase,0
+Mapoly0006s0133,PR,PR9,Peroxidase,0
+Mapoly0127s0001,PR,PR9,Peroxidase,0
+Mapoly0015s0156,PR,PR9,Peroxidase,1
+Mapoly0182s0023,PR,PR9,Peroxidase,0
+Mapoly0024s0047,PR,PR9,Peroxidase,0
+Mapoly0109s0003,PR,PR9,Peroxidase,0
+Mapoly0032s0071,PR,PR9,Peroxidase,0
+Mapoly0410s0001,PR,PR9,Peroxidase,0
+Mapoly0067s0040,PR,PR9,Peroxidase,0
+Mapoly0009s0175,PR,PR9,Peroxidase,0
+Mapoly0042s0076,PR,PR9,Peroxidase,0
+Mapoly0096s0070,PR,PR9,Peroxidase,0
+Mapoly3855s0001,PR,PR9,Peroxidase,1
+Mapoly0136s0009,PR,PR9,Peroxidase,1
+Mapoly0076s0034,PR,PR9,Peroxidase,0
+Mapoly0143s0040,PR,PR9,Peroxidase,0
+Mapoly0050s0028,PR,PR9,Peroxidase,0
+Mapoly0655s0001,PR,PR9,Peroxidase,0
+Mapoly0095s0036,PR,PR9,Peroxidase,0
+Mapoly0141s0008,PR,PR9,Peroxidase,0
+Mapoly0106s0054,PR,PR9,Peroxidase,1
+Mapoly0161s0034,PR,PR9,Peroxidase,0
+Mapoly0032s0145,PR,PR9,Peroxidase,0
+Mapoly0032s0072,PR,PR9,Peroxidase,0
+Mapoly0059s0017,PR,PR9,Peroxidase,0
+Mapoly0196s0010,PR,PR9,Peroxidase,0
+Mapoly0084s0012,PR,PR9,Peroxidase,0
+Mapoly0004s0093,PR,PR9,Peroxidase,0
+Mapoly0157s0027,PR,PR9,Peroxidase,0
+Mapoly0009s0082,PR,PR9,Peroxidase,0
+Mapoly0057s0077,PR,PR9,Peroxidase,0
+Mapoly0058s0119,PR,PR9,Peroxidase,1
+Mapoly0009s0185,PR,PR9,Peroxidase,0
+Mapoly0128s0033,PR,PR9,Peroxidase,0
+Mapoly0154s0038,PR,PR9,Peroxidase,0
+Mapoly0198s0002,PR,PR9,Peroxidase,0
+Mapoly0051s0045,PR,PR9,Peroxidase,0
+Mapoly1761s0001,PR,PR9,Peroxidase,0
+Mapoly2722s0001,PR,PR9,Peroxidase,1
+Mapoly0082s0044,PR,PR9,Peroxidase,0
+Mapoly0243s0005,PR,PR9,Peroxidase,0
+Mapoly0004s0139,PR,PR9,Peroxidase,0
+Mapoly0196s0015,PR,PR9,Peroxidase,0
+Mapoly0182s0004,PR,PR9,Peroxidase,0
+Mapoly0106s0052,PR,PR9,Peroxidase,1
+Mapoly0047s0004,PR,PR9,Peroxidase,0
+Mapoly0042s0098,PR,PR9,Peroxidase,0
+Mapoly0594s0002,PR,PR9,Peroxidase,0
+Mapoly0562s0001,PR,PR9,Peroxidase,0
+Mapoly0220s0001,PR,PR9,Peroxidase,1
+Mapoly0189s0022,PR,PR9,Peroxidase,0
+Mapoly0047s0007,PR,PR9,Peroxidase,0
+Mapoly0106s0051,PR,PR9,Peroxidase,1
+Mapoly0032s0143,PR,PR9,Peroxidase,0
+Mapoly0031s0176,PR,PR9,Peroxidase,0
+Mapoly0143s0043,PR,PR9,Peroxidase,0
+Mapoly0106s0049,PR,PR9,Peroxidase,1
+Mapoly0243s0002,PR,PR9,Peroxidase,0
+Mapoly0068s0084,PR,PR9,Peroxidase,0
+Mapoly0025s0020,PR,PR9,Peroxidase,0
+Mapoly0043s0074,PR,PR9,Peroxidase,0
+Mapoly0175s0025,PR,PR9,Peroxidase,0
+Mapoly0084s0002,PR,PR9,Peroxidase,0
+Mapoly0136s0034,PR,PR9,Peroxidase,0
+Mapoly0035s0131,PR,PR9,Peroxidase,0
+Mapoly1623s0001,PR,PR9,Peroxidase,0
+Mapoly0002s0115,PR,PR9,Peroxidase,0
+Mapoly0124s0063,PR,PR9,Peroxidase,0
+Mapoly0009s0127,PR,PR9,Peroxidase,0
+Mapoly0032s0061,PR,PR9,Peroxidase,0
+Mapoly0070s0023,PR,PR9,Peroxidase,0
+Mapoly0109s0004,PR,PR9,Peroxidase,0
+Mapoly0196s0013,PR,PR9,Peroxidase,0
+Mapoly0077s0043,PR,PR9,Peroxidase,0
+Mapoly0182s0002,PR,PR9,Peroxidase,0
+Mapoly0161s0001,PR,PR9,Peroxidase,0
+Mapoly0106s0050,PR,PR9,Peroxidase,1
+Mapoly0116s0008,PR,PR9,Peroxidase,0
+Mapoly0048s0001,PR,PR9,Peroxidase,0
+Mapoly0149s0005,PR,PR9,Peroxidase,0
+Mapoly0032s0070,PR,PR9,Peroxidase,0
+Mapoly0243s0004,PR,PR9,Peroxidase,0
+Mapoly0004s0094,PR,PR9,Peroxidase,0
+Mapoly0341s0001,PR,PR9,Peroxidase,0
+Mapoly0115s0041,PR,PR9,Peroxidase,0
+Mapoly0006s0045,PR,PR9,Peroxidase,0
+Mapoly0175s0023,PR,PR9,Peroxidase,0
+Mapoly0435s0001,PR,PR9,Peroxidase,0
+Mapoly0182s0024,PR,PR9,Peroxidase,0
+Mapoly0143s0042,PR,PR9,Peroxidase,0
+Mapoly0067s0041,PR,PR9,Peroxidase,0
+Mapoly0124s0003,PR,PR9,Peroxidase,0
+Mapoly0220s0004,PR,PR9,Peroxidase,1
+Mapoly0032s0073,PR,PR9,Peroxidase,0
+Mapoly0141s0009,PR,PR9,Peroxidase,0
+Mapoly0048s0003,PR,PR9,Peroxidase,0
+Mapoly0161s0038,PR,PR9,Peroxidase,0
+Mapoly0044s0005,PR,PR9,Peroxidase,0
+Mapoly0089s0017,PR,PR9,Peroxidase,0
+Mapoly0100s0018,PR,PR9,Peroxidase,0
+Mapoly0196s0011,PR,PR9,Peroxidase,0
+Mapoly0047s0003,PR,PR9,Peroxidase,0
+Mapoly0076s0031,PR,PR9,Peroxidase,0
+Mapoly0033s0163,PR,PR9,Peroxidase,0
+Mapoly0067s0039,PR,PR9,Peroxidase,0
+Mapoly0057s0076,PR,PR9,Peroxidase,0
+Mapoly0127s0002,PR,PR9,Peroxidase,0
+Mapoly0011s0220,PR,PR9,Peroxidase,0
+Mapoly0196s0016,PR,PR9,Peroxidase,0
+Mapoly0127s0014,PR,PR9,Peroxidase,0
+Mapoly1410s0001,PR,PR9,Peroxidase,0
+Mapoly0013s0043,PR,PR9,Peroxidase,0
+Mapoly0015s0180,PR,PR9,Peroxidase,0
+Mapoly0038s0040,PR,PR9,Peroxidase,0
+Mapoly0088s0020,PR,PR9,Peroxidase,0
+Mapoly0147s0045,PR,PR9,Peroxidase,0
+Mapoly0032s0074,PR,PR9,Peroxidase,0
+Mapoly0027s0139,PR,PR9,Peroxidase,0
+Mapoly0124s0039,PR,PR9,Peroxidase,0
+Mapoly0047s0052,PR,PR9,Peroxidase,0
+Mapoly0243s0006,PR,PR9,Peroxidase,0
+Mapoly0124s0062,PR,PR9,Peroxidase,0
+Mapoly2760s0001,PR,PR9,Peroxidase,0
+Mapoly0087s0046,PR,PR9,Peroxidase,0
+Mapoly0035s0129,PR,PR9,Peroxidase,0
+Mapoly0161s0033,PR,PR9,Peroxidase,0
+Mapoly0157s0026,PR,PR9,Peroxidase,0
+Mapoly0047s0008,PR,PR9,Peroxidase,0
+Mapoly0008s0265,PR,PR9,Peroxidase,0
+Mapoly0009s0184,PR,PR9,Peroxidase,0
+Mapoly0246s0006,PR,PR9,Peroxidase,0
+Mapoly0070s0055,PR,PR9,Peroxidase,0
+Mapoly0009s0083,PR,PR9,Peroxidase,0
+Mapoly0073s0003,PR,PR9,Peroxidase,0
+Mapoly0486s0001,PR,PR9,Peroxidase,0
+Mapoly0065s0079,PR,PR9,Peroxidase,0
+Mapoly0655s0002,PR,PR9,Peroxidase,0
+Mapoly0332s0001,PR,PR9,Peroxidase,0
+Mapoly0198s0001,PR,PR9,Peroxidase,0
+Mapoly0161s0036,PR,PR9,Peroxidase,0
+Mapoly0106s0053,PR,PR9,Peroxidase,1
+Mapoly0211s0013,PR,PR9,Peroxidase,0
+Mapoly0128s0035,PR,PR9,Peroxidase,0
+Mapoly0004s0092,PR,PR9,Peroxidase,0
+Mapoly0198s0004,PR,PR9,Peroxidase,0
+Mapoly0055s0126,PR,PR9,Peroxidase,0
+Mapoly0417s0001,PR,PR9,Peroxidase,0
+Mapoly0175s0026,PR,PR9,Peroxidase,0
+Mapoly0161s0035,PR,PR9,Peroxidase,0
+Mapoly0128s0034,PR,PR9,Peroxidase,0
+Mapoly0054s0141,PR,PR9,Peroxidase,0
+Mapoly0182s0003,PR,PR9,Peroxidase,0
+Mapoly0032s0144,PR,PR9,Peroxidase,0
+Mapoly0047s0006,PR,PR9,Peroxidase,0
+Mapoly0064s0029,PR,PR9,Peroxidase,0
+Mapoly0004s0091,PR,PR9,Peroxidase,0
+Mapoly0084s0011,PR,PR9,Peroxidase,0
+Mapoly0148s0001,PR,PR10,Polyketide cyclase / dehydrase and lipid transport,0
+Mapoly0004s0036,PR,PR10,Polyketide cyclase / dehydrase and lipid transport,0
+Mapoly0125s0022,PR,PR10,Polyketide cyclase / dehydrase and lipid transport,0
+Mapoly0066s0015,PR,PR10,Polyketide cyclase / dehydrase and lipid transport,0
+Mapoly0004s0097,PR,PR14,Probable lipid transfer,0
+Mapoly0001s0562,PR,PR14,Probable lipid transfer,0
+Mapoly0188s0009,PR,PR14,Probable lipid transfer,0
+Mapoly0062s0051,PR,PR14,Probable lipid transfer,0
+Mapoly0120s0024,PR,PR14,Probable lipid transfer,0
+Mapoly0033s0040,PR,PR14,Probable lipid transfer,0
+Mapoly0062s0047,PR,PR14,Probable lipid transfer,0
+Mapoly0062s0048,PR,PR14,Probable lipid transfer,0
+Mapoly0027s0052,PR,PR14,Probable lipid transfer,0
+Mapoly0088s0044,PR,PR14,Probable lipid transfer,0
+Mapoly0030s0151,PR,PR14,Probable lipid transfer,0
+Mapoly0001s0495,PR,PR14,Probable lipid transfer,0
+Mapoly0006s0125,PR,PR14,Probable lipid transfer,0
+Mapoly0140s0020,PR,PR14,Probable lipid transfer,0
+Mapoly0009s0088,PR,PR14,Probable lipid transfer,0
+Mapoly0005s0134,PR,PR14,Probable lipid transfer,0
+Mapoly0013s0188,PR,PR14,Probable lipid transfer,0
+Mapoly0027s0053,PR,PR14,Probable lipid transfer,0
+Mapoly0955s0001,PR,PR14,Probable lipid transfer,0
+Mapoly0006s0126,PR,PR14,Probable lipid transfer,0
+Mapoly0020s0095,PR,PR14,Probable lipid transfer,0
+Mapoly0033s0039,PR,PR14,Probable lipid transfer,0
+Mapoly0062s0050,PR,PR14,Probable lipid transfer,0
+Mapoly0062s0049,PR,PR14,Probable lipid transfer,0
+Mapoly0088s0035,PR,PR14,Probable lipid transfer,0
+Mapoly0005s0135,PR,PR14,Probable lipid transfer,0
+Mapoly0033s0103,PR,PR14,Probable lipid transfer,0
+Mapoly0031s0025,PR,PR15,Cupin,0
+Mapoly0030s0145,PR,PR15,Cupin,0
+Mapoly0193s0018,PR,PR15,Cupin,0
+Mapoly0031s0195,PR,PR15,Cupin,0
+Mapoly0040s0045,PR,PR15,Cupin,0
+Mapoly0145s0013,PR,PR15,Cupin,0
+Mapoly0117s0051,PR,PR15,Cupin,0
+Mapoly0031s0009,PR,PR15,Cupin,0
+Mapoly0147s0047,PR,PR15,Cupin,0
+Mapoly0180s0002,PR,PR15,Cupin,0
+Mapoly0352s0003,PR,PR15,Cupin,0
+Mapoly0031s0015,PR,PR15,Cupin,0
+Mapoly0085s0059,PR,PR15,Cupin,0
+Mapoly0010s0117,PR,PR15,Cupin,1
+Mapoly0010s0110,PR,PR15,Cupin,0
+Mapoly0001s0007,PR,PR15,Cupin,1
+Mapoly0027s0109,PR,PR15,Cupin,0
+Mapoly1984s0001,PR,PR15,Cupin,1
+Mapoly0010s0115,PR,PR15,Cupin,0
+Mapoly0211s0004,PR,PR15,Cupin,0
+Mapoly0031s0014,PR,PR15,Cupin,0
+Mapoly0193s0008,PR,PR15,Cupin,0
+Mapoly0352s0001,PR,PR15,Cupin,0
+Mapoly0010s0025,PR,PR15,Cupin,0
+Mapoly0010s0111,PR,PR15,Cupin,1
+Mapoly0377s0002,PR,PR15,Cupin,1
+Mapoly0001s0185,PR,PR15,Cupin,0
+Mapoly0211s0005,PR,PR15,Cupin,0
+Mapoly0082s0058,PR,PR15,Cupin,0
+Mapoly0112s0025,PR,PR15,Cupin,0
+Mapoly0180s0026,PR,PR15,Cupin,1
+Mapoly1268s0001,PR,PR15,Cupin,0
+Mapoly0031s0005,PR,PR15,Cupin,0
+Mapoly0242s0003,PR,PR15,Cupin,0
+Mapoly0021s0001,PR,PR15,Cupin,0
+Mapoly0193s0003,PR,PR15,Cupin,0
+Mapoly0197s0001,PR,PR15,Cupin,0
+Mapoly0028s0004,PR,PR15,Cupin,0
+Mapoly0031s0003,PR,PR15,Cupin,0
+Mapoly0010s0106,PR,PR15,Cupin,0
+Mapoly0193s0020,PR,PR15,Cupin,0
+Mapoly0045s0001,PR,PR15,Cupin,1
+Mapoly0246s0007,PR,PR15,Cupin,0
+Mapoly0181s0008,PR,PR15,Cupin,0
+Mapoly0010s0107,PR,PR15,Cupin,1
+Mapoly0034s0129,PR,PR15,Cupin,1
+Mapoly0180s0030,PR,PR15,Cupin,1
+Mapoly0193s0011,PR,PR15,Cupin,0
+Mapoly0031s0019,PR,PR15,Cupin,0
+Mapoly0050s0040,PR,PR15,Cupin,0
+Mapoly0031s0024,PR,PR15,Cupin,0
+Mapoly0108s0024,PR,PR15,Cupin,0
+Mapoly0008s0175,PR,PR15,Cupin,0
+Mapoly0180s0027,PR,PR15,Cupin,1
+Mapoly0130s0001,PR,PR15,Cupin,0
+Mapoly2349s0001,PR,PR15,Cupin,0
+Mapoly0193s0009,PR,PR15,Cupin,0
+Mapoly0170s0016,PR,PR15,Cupin,1
+Mapoly0032s0077,PR,PR15,Cupin,0
+Mapoly0050s0041,PR,PR15,Cupin,0
+Mapoly0147s0046,PR,PR15,Cupin,0
+Mapoly0024s0044,PR,PR15,Cupin,0
+Mapoly0193s0019,PR,PR15,Cupin,0
+Mapoly0377s0001,PR,PR15,Cupin,1
+Mapoly0180s0001,PR,PR15,Cupin,0
+Mapoly0028s0003,PR,PR15,Cupin,1
+Mapoly0075s0040,PR,PR15,Cupin,0
+Mapoly0210s0002,PR,PR15,Cupin,0
+Mapoly0180s0029,PR,PR15,Cupin,0
+Mapoly0010s0116,PR,PR15,Cupin,0
+Mapoly0083s0073,PR,PR15,Cupin,0
+Mapoly0085s0058,PR,PR15,Cupin,0
+Mapoly0170s0021,PR,PR15,Cupin,0
+Mapoly0031s0013,PR,PR15,Cupin,0
+Mapoly0930s0001,PR,PR15,Cupin,0
+Mapoly0180s0003,PR,PR15,Cupin,0
+Mapoly0031s0020,PR,PR15,Cupin,0
+Mapoly0031s0016,PR,PR15,Cupin,0
+Mapoly0031s0008,PR,PR15,Cupin,0
+Mapoly0193s0005,PR,PR15,Cupin,0
+Mapoly0026s0053,PR,PR15,Cupin,0
+Mapoly0174s0022,PR,PR15,Cupin,1
+Mapoly0085s0057,PR,PR15,Cupin,0
+Mapoly0352s0002,PR,PR15,Cupin,0
+Mapoly0046s0005,PR,PR15,Cupin,1
+Mapoly0124s0068,PR,PR15,Cupin,0
+Mapoly0197s0002,PR,PR15,Cupin,0
+Mapoly0045s0002,PR,PR15,Cupin,1
+Mapoly0085s0060,PR,PR15,Cupin,0
+Mapoly0124s0069,PR,PR15,Cupin,0
+Mapoly0211s0008,PR,PR15,Cupin,0
+Mapoly0193s0021,PR,PR15,Cupin,0
+Mapoly0010s0108,PR,PR15,Cupin,1
+Mapoly0032s0076,PR,PR15,Cupin,0
+Mapoly0193s0010,PR,PR15,Cupin,0
+Mapoly0193s0007,PR,PR15,Cupin,0
+Mapoly0091s0050,PR,PR15,Cupin,0
+Mapoly0091s0042,PR,PR15,Cupin,0
+Mapoly0242s0002,PR,PR15,Cupin,0
+Mapoly0210s0003,PR,PR15,Cupin,0
+Mapoly0180s0028,PR,PR15,Cupin,0
+Mapoly0010s0112,PR,PR15,Cupin,1
+Mapoly0010s0105,PR,PR15,Cupin,0
+Mapoly1685s0001,PR,PR15,Cupin,0
+Mapoly0024s0022,PR,PR17,Peptidase of plants and bacteria,0
+Mapoly0057s0079,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0103s0065,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0307s0001,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0218s0010,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0123s0007,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0535s0002,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0307s0003,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0535s0001,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0066s0038,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0123s0006,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0307s0002,PR,PR Chitinase,Chitin recognition protein,0
+Mapoly0147s0041,PR,PR Chitinase,Chitinase class I,0
+Mapoly0147s0043,PR,PR Chitinase,Chitinase class I,0
+Mapoly0147s0004,PR,PR Chitinase,Chitinase class I,0
+Mapoly0147s0044,PR,PR Chitinase,Chitinase class I,0
+Mapoly0062s0074,PR,PR Chitinase,Chitinase class I,0
+Mapoly0106s0016,PR,PR Chitinase,Chitinase class I,0
+Mapoly0040s0034,PR,PR Chitinase,Chitinase class I,0
+Mapoly0147s0042,PR,PR Chitinase,Chitinase class I,0
+Mapoly0020s0126,PR,PR Chitinase,Chitinase class I,0
+Mapoly0118s0041,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0031s0021,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0015s0159,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0117s0050,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0023s0114,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0352s0004,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0081s0081,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0102s0038,PR,PR8/PR11,Glycosyl hydrolases family 18,0
+Mapoly0196s0008,PR,PR Chitinase,Chitin recognition protein/Glycosyl hydrolases family 18,0
+Mapoly0092s0054,PR,PR Chitinase,Chitin recognition protein/Glycosyl hydrolases family 18,1
+Mapoly0033s0157,RLK,NA,RLK-Pelle_CR4L,0
+Mapoly0064s0097,RLK,NA,RLK-Pelle_CR4L,0
+Mapoly0082s0079,RLK,NA,RLK-Pelle_CR4L,0
+Mapoly0091s0077,RLK,NA,RLK-Pelle_CR4L,0
+Mapoly0146s0034,RLK,NA,RLK-Pelle_CR4L,0
+Mapoly0004s0002,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0004s0003,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0006s0120,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0019s0090,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0027s0030,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0027s0055,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0027s0057,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0027s0059,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0027s0060,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0027s0062,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0034s0124,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0034s0139,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0036s0120,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0042s0075,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0047s0109,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0071s0094,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0075s0059,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0090s0085,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0090s0086,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0092s0075,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0095s0026,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0100s0003,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0122s0039,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0126s0007,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0144s0017,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0163s0009,RLK,NA,RLK-Pelle_L-LEC,1
+Mapoly0197s0020,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly0219s0001,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly1887s0001,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly4159s0001,RLK,NA,RLK-Pelle_L-LEC,0
+Mapoly1925s0001,RLK,NA,RLK-Pelle_C-LEC,0
+Mapoly2823s0001,RLK,NA,RLK-Pelle_C-LEC,0
+Mapoly0004s0287,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0061s0017,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0086s0059,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0086s0060,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0103s0065,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0123s0006,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0156s0005,RLK,NA,RLK-Pelle_SD-2b,0
+Mapoly0007s0181,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0007s0179,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0007s0184,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0038s0013,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0038s0017,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0038s0019,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0038s0021,RLK,NA,RLK-Pelle_WAK,0
+Mapoly0006s0207,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0006s0209,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0024s0045,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0028s0102,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0039s0016,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0042s0003,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0049s0006,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0081s0021,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0095s0007,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0098s0059,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0140s0033,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly2529s0001,RLK,NA,RLK-Pelle_WAK_LRK10L-1,0
+Mapoly0008s0038,RLK,NA,RLK-Pelle_LysM,0
+Mapoly0013s0080,RLK,NA,RLK-Pelle_LysM,0
+Mapoly0020s0009,RLK,NA,RLK-Pelle_LysM,0
+Mapoly0056s0067,RLK,NA,RLK-Pelle_LysM,0
+Mapoly0080s0051,RLK,NA,RLK-Pelle_LysM,0
+Mapoly0055s0121,RLK,NA,RLK-Pelle_Extensin,0
+Mapoly0060s0018,RLK,NA,RLK-Pelle_Extensin,0
+Mapoly0146s0017,RLK,NA,RLK-Pelle_Extensin,0
+Mapoly2529s0001,RLK,NA,RLK-Pelle_Extensin,0
+Mapoly0869s0001,RLK,NA,RLK-Pelle_CrRLK1L-1,0
+Mapoly0037s0143,RLK,NA,RLK-Pelle_RKF3,0
+Mapoly0037s0144,RLK,NA,RLK-Pelle_RKF3,0
+Mapoly0094s0064,RLK,NA,RLK-Pelle_RKF3,0
+Mapoly1391s0001,RLK,NA,RLK-Pelle_PERK-1,0
+Mapoly0008s0180,RLK,NA,RLK-Pelle_PERK-2,0
+Mapoly0010s0123,RLK,NA,RLK-Pelle_PERK-2,0
+Mapoly0080s0031,RLK,NA,RLK-Pelle_URK-1,0
+Mapoly0004s0098,RLK,NA,RLK-Pelle_URK-Pp-1,0
+Mapoly0004s0099,RLK,NA,RLK-Pelle_URK-Pp-1,1
+Mapoly0004s0100,RLK,NA,RLK-Pelle_URK-Pp-1,1
+Mapoly0029s0021,RLK,NA,RLK-Pelle_URK-Pp-2,0
+Mapoly0006s0008,RLK,NA,RLK-Pelle_RLCK-II,0
+Mapoly0007s0160,RLK,NA,RLK-Pelle_RLCK-IV,0
+Mapoly0034s0072,RLK,NA,RLK-Pelle_RLCK-V,0
+Mapoly0046s0087,RLK,NA,RLK-Pelle_RLCK-V,0
+Mapoly0005s0273,RLK,NA,RLK-Pelle_RLCK-VI,0
+Mapoly0029s0060,RLK,NA,RLK-Pelle_RLCK-VI,0
+Mapoly0140s0039,RLK,NA,RLK-Pelle_RLCK-VIIa-1,0
+Mapoly0100s0049,RLK,NA,RLK-Pelle_RLCK-VIIa-2,0
+Mapoly0042s0105,RLK,NA,RLK-Pelle_RLCK-VIIb,0
+Mapoly0051s0094,RLK,NA,RLK-Pelle_RLCK-VIII,0
+Mapoly0122s0040,RLK,NA,RLK-Pelle_RLCK-IXa,0
+Mapoly0065s0009,RLK,NA,RLK-Pelle_RLCK-X,0
+Mapoly0140s0042,RLK,NA,RLK-Pelle_RLCK-XI,0
+Mapoly0040s0140,RLK,NA,RLK-Pelle_RLCK-XII-1,0
+Mapoly0043s0058,RLK,NA,RLK-Pelle_RLCK-XV,0
+Mapoly0090s0081,RLK,NA,RLK-Pelle_RLCK-XV,0
+Mapoly0065s0093,RLK,NA,RLK-Pelle_RLCK-XVI,0
+Mapoly0040s0102,RLK,NA,RLK-Pelle_DLSV,0
+Mapoly0072s0030,trafficking,MpRAB1a,Rab GTPase,0
+Mapoly0007s0067,trafficking,MpRAB1b,Rab GTPase,0
+Mapoly0170s0032,trafficking,MpRAB2a,Rab GTPase,0
+Mapoly0100s0038,trafficking,MpRAB2b,Rab GTPase,0
+Mapoly0036s0134,trafficking,MpRAB5,Rab GTPase,0
+Mapoly0077s0027,trafficking,MpARA6,Rab GTPase,0
+Mapoly0141s0004,trafficking,MpRAB6,Rab GTPase,0
+Mapoly0946s0001,trafficking,MpRAB7,Rab GTPase,0
+Mapoly0116s0012,trafficking,MpRAB8a,Rab GTPase,0
+Mapoly0057s0033,trafficking,MpRAB8b,Rab GTPase,0
+Mapoly0015s0029,trafficking,MpRAB8c,Rab GTPase,0
+MapolyY_A0041,trafficking,MpRAB11a1,Rab GTPase,0
+Mapoly0018s0008,trafficking,MpRAB11a2,Rab GTPase,0
+Mapoly0050s0009,trafficking,MpRAB11b,Rab GTPase,0
+Mapoly0007s0069,trafficking,MpRAB11c,Rab GTPase,0
+Mapoly0167s0019,trafficking,MpRAB18,Rab GTPase,0
+Mapoly0001s0443,trafficking,MpRAB21,Rab GTPase,0
+Mapoly0020s0116,trafficking,MpRAB23,Rab GTPase,0
+Mapoly0163s0015,trafficking,MpSYP12A,Common ortholog of both Arabidopsis SYP11 and SYP12 genes,0
+Mapoly0101s0013,trafficking,MpSYP12B,Common ortholog of both Arabidopsis SYP11 and SYP12 genes,0
+Mapoly0009s0005,trafficking,MpSYP13A,Ortholog of Arabidopsis SYP13 genes,0
+Mapoly0055s0091,trafficking,MpSYP13B,Ortholog of Arabidopsis SYP13 genes,0
+Mapoly0187s0013,trafficking,MpSYP2,Ortholog of Arabidopsis SYP2 genes,0
+Mapoly0036s0047,trafficking,MpSYP3,Ortholog of Arabidopsis SYP3 genes,0
+Mapoly0042s0041,trafficking,MpSYP4,Ortholog of Arabidopsis SYP4 genes,0
+Mapoly0004s0228,trafficking,MpSYP5,Ortholog of Arabidopsis SYP5 genes,0
+Mapoly0140s0004,trafficking,MpSYP6A,Ortholog of Arabidopsis SYP61 gene,0
+Mapoly0079s0013,trafficking,MpSYP6B,Ortholog of Arabidopsis SYP61 gene,0
+Mapoly0014s0021,trafficking,MpSYP7A,Ortholog of Arabidopsis SYP7 genes,0
+Mapoly0001s0062.1,trafficking,MpSYP7B.1,Ortholog of Arabidopsis SYP7 genes,0
+Mapoly0001s0062.2,trafficking,MpSYP7B.2,Ortholog of Arabidopsis SYP7 genes,0
+Mapoly0024s0083,trafficking,MpSYP8,Ortholog of Arabidopsis SYP81 gene,0
+Mapoly0002s0103,trafficking,MpBET1,Ortholog of Arabidopsis BET1 genes,0
+Mapoly0001s0245,trafficking,MpGOS11,Ortholog of Arabidopsis GOS11 gene,0
+Mapoly0016s0161,trafficking,MpGOS12,Ortholog of Arabidopsis GOS12 gene,0
+Mapoly0001s0234,trafficking,MpMEMB1,Ortholog of Arabidopsis MEMB1 genes,0
+Mapoly0031s0037,trafficking,MpNPSN1,Ortholog of Arabidopsis NPSN1 genes,0
+Mapoly0132s0032,trafficking,MpRBCS,Ortholog of Arabidopsis RBCS genes,0
+Mapoly0019s0137,trafficking,MpSEC20,Ortholog of Arabidopsis SEC20 gene,0
+Mapoly0023s0071,trafficking,MpSEC22,Ortholog of Arabidopsis SEC22 genes,0
+Mapoly0006s0109,trafficking,MpSFT1,Ortholog of Arabidopsis SFT1 genes,0
+Mapoly0009s0187,trafficking,MpSIG1,Ortholog of Arabidopsis SIG1 gene,0
+Mapoly0214s0004,trafficking,MpSIG2,Ortholog of Arabidopsis SIG2 gene,0
+Mapoly0007s0213,trafficking,MpSIG5,Ortholog of Arabidopsis SIG5 gene,0
+Mapoly0007s0071,trafficking,MpSIGX,Similar gene of Arabidopsis plastid RNA polymerase sigma factor genes,0
+Mapoly0199s0021,trafficking,MpSNAP,Ortholog of Arabidopsis SNAP genes,0
+Mapoly0063s0003,trafficking,MpTOMOSYN11,Ortholog of Arabidopsis TOMOSYN1 genes,0
+Mapoly0207s0009,trafficking,MpTOMOSYN12,Ortholog of Arabidopsis TOMOSYN1 genes,0
+Mapoly0001s0213,trafficking,MpUSE1A,Ortholog of Arabidopsis USE1 genes,0
+Mapoly0058s0071,trafficking,MpUSE1B,Ortholog of Arabidopsis USE1 genes,0
+Mapoly0064s0109,trafficking,MpVAMP71,Ortholog of Arabidopsis VAMP7 genes,0
+Mapoly0076s0053.2,trafficking,MpVAMP72A.1,Ortholog of Arabidopsis VAMP72 genes,0
+Mapoly0076s0053.1,trafficking,MpVAMP72A.2,Ortholog of Arabidopsis VAMP72 genes,0
+Mapoly0008s0223,trafficking,MpVAMP72B,Ortholog of Arabidopsis VAMP72 genes,0
+Mapoly0008s0229,trafficking,MpVAMP72C,Ortholog of Arabidopsis VAMP72 genes,0
+Mapoly0008s0227,trafficking,MpVAMP72E,Ortholog of Arabidopsis VAMP72 genes,0
+Mapoly0019s0067,trafficking,MpVTI1,Ortholog of Arabidopsis VTI1 genes,0
+Mapoly0127s0017,trafficking,MpYKT6,Ortholog of Arabidopsis YKT6 genes,0
+Mapoly0060s0090,transporter,MpAMT1.2,ammonium transporter,0
+Mapoly0081s0032,transporter,MpAMT1.3,ammonium transporter,0
+Mapoly0081s0029,transporter,MpAMT1.4,ammonium transporter,0
+Mapoly0081s0031,transporter,MpAMT1.5,ammonium transporter,0
+Mapoly0081s0034,transporter,MpAMT1.6,ammonium transporter,0
+Mapoly0077s0030,transporter,MpAMT1.7,ammonium transporter,0
+Mapoly0077s0028,transporter,MpAMT1.8,ammonium transporter,0
+Mapoly0077s0031,transporter,MpAMT1.9,ammonium transporter,0
+Mapoly0028s0091,transporter,MpAMT2,ammonium transporter,0
+Mapoly0192s0013,transporter,MpAMT20,ammonium transporter,0
+Mapoly0080s0061,transporter,MpAMT2.2,ammonium transporter,0
+Mapoly0174s0008,transporter,MpAMT2.3,ammonium transporter,0
+Mapoly0192s0010,transporter,MpAMT2.4,ammonium transporter,0
+Mapoly0192s0011,transporter,MpAMT2.5,ammonium transporter,0
+Mapoly0192s0012,transporter,MpAMT2.6,ammonium transporter,0
+Mapoly0192s0015,transporter,MpAMT2.7,ammonium transporter,0
+Mapoly0213s0002,transporter,MpAMT2.8,ammonium transporter,0
+Mapoly0213s0001,transporter,MpAMT2.9,ammonium transporter,0
+Mapoly0037s0109,transporter,MpSUT2,sucrose transporter,0
+Mapoly0009s0099,transporter,MpSUT4,sucrose transporter,0
+Mapoly0047s0067,transporter,MpAAP1,amino acid transporter,0
+Mapoly0130s0012,transporter,MpAAP2,amino acid transporter,0
+Mapoly0170s0014,transporter,MpAAP3,amino acid transporter,0
+Mapoly0134s0048,transporter,MpAAP4,amino acid transporter,0
+Mapoly0004s0095,transporter,MpAAP5,amino acid transporter,0
+Mapoly0049s0026,transporter,ABC,ABCA-full,0
+Mapoly0078s0053,transporter,ABC,ABCA-half,0
+Mapoly0101s0011,transporter,ABC,ABCA-half,0
+Mapoly0165s0002,transporter,ABC,ABCA-half,1
+Mapoly0165s0010,transporter,ABC,ABCA-half,0
+Mapoly0002s0234,transporter,ABC,ABCB-full,0
+Mapoly0021s0082,transporter,ABC,ABCB-full,0
+Mapoly0023s0157,transporter,ABC,ABCB-full,0
+Mapoly0037s0014,transporter,ABC,ABCB-full,0
+Mapoly0040s0071,transporter,ABC,ABCB-full,0
+Mapoly0062s0086,transporter,ABC,ABCB-full,0
+Mapoly0075s0052,transporter,ABC,ABCB-full,0
+Mapoly0075s0053,transporter,ABC,ABCB-full,0
+Mapoly0111s0014,transporter,ABC,ABCB-full,0
+Mapoly0115s0036,transporter,ABC,ABCB-full,0
+Mapoly0182s0009,transporter,ABC,ABCB-full,0
+Mapoly0001s0191,transporter,ABC,ABCB-half,0
+Mapoly0001s0331,transporter,ABC,ABCB-half,0
+Mapoly0025s0012,transporter,ABC,ABCB-half,0
+Mapoly0049s0019,transporter,ABC,ABCB-half,0
+Mapoly0075s0079,transporter,ABC,ABCB-half,0
+Mapoly0091s0010,transporter,ABC,ABCB-half,0
+Mapoly0134s0014,transporter,ABC,ABCB-half,0
+Mapoly0002s0324,transporter,ABC,ABCC-full,0
+Mapoly0009s0026,transporter,ABC,ABCC-full,0
+Mapoly0009s0071,transporter,ABC,ABCC-full,0
+Mapoly0011s0164,transporter,ABC,ABCC-full,0
+Mapoly0011s0178,transporter,ABC,ABCC-full,0
+Mapoly0011s0180,transporter,ABC,ABCC-full,0
+Mapoly0032s0013,transporter,ABC,ABCC-full,1
+Mapoly0032s0016,transporter,ABC,ABCC-full,0
+Mapoly0032s0017,transporter,ABC,ABCC-full,0
+Mapoly0040s0011,transporter,ABC,ABCC-full,0
+Mapoly0054s0024,transporter,ABC,ABCC-full,0
+Mapoly0065s0035,transporter,ABC,ABCC-full,0
+Mapoly0133s0051,transporter,ABC,ABCC-full,0
+Mapoly0147s0016,transporter,ABC,ABCC-full,0
+Mapoly0171s0004,transporter,ABC,ABCC-full,0
+Mapoly0144s0028,transporter,ABC,ABCD-full,0
+Mapoly0025s0137,transporter,ABC,ABCD-half,0
+Mapoly0094s0070,transporter,ABC,ABCD-half,0
+Mapoly0066s0022,transporter,ABC,ABCD-half,0
+Mapoly0081s0022,transporter,ABC,ABCE-soluble,0
+Mapoly0096s0064,transporter,ABC,ABCE-Itype,0
+Mapoly0003s0123,transporter,ABC,ABCF-soluble,0
+Mapoly0003s0135,transporter,ABC,ABCF-soluble,0
+Mapoly0038s0051,transporter,ABC,ABCF-soluble,0
+Mapoly0102s0020,transporter,ABC,ABCF-soluble,0
+Mapoly0122s0045,transporter,ABC,ABCF-soluble,0
+Mapoly0002s0337,transporter,ABC,ABCG-full,0
+Mapoly0014s0102,transporter,ABC,ABCG-full,0
+Mapoly0021s0156,transporter,ABC,ABCG-full,0
+Mapoly0040s0080,transporter,ABC,ABCG-full,0
+Mapoly0031s0045,transporter,ABC,ABCG-full,0
+Mapoly0040s0035,transporter,ABC,ABCG-full,0
+Mapoly0042s0048,transporter,ABC,ABCG-full,0
+Mapoly0061s0083,transporter,ABC,ABCG-full,0
+Mapoly0083s0014,transporter,ABC,ABCG-full,0
+Mapoly0087s0041,transporter,ABC,ABCG-full,1
+Mapoly0176s0013,transporter,ABC,ABCG-full,0
+Mapoly0125s0012,transporter,ABC,ABCG-full,0
+Mapoly0004s0001,transporter,ABC,ABCG-half,0
+Mapoly0008s0003,transporter,ABC,ABCG-half,0
+Mapoly0011s0127,transporter,ABC,ABCG-half,0
+Mapoly0015s0086,transporter,ABC,ABCG-half,0
+Mapoly0020s0021,transporter,ABC,ABCG-half,0
+Mapoly0027s0063,transporter,ABC,ABCG-half,0
+Mapoly0027s0141,transporter,ABC,ABCG-half,0
+Mapoly0028s0077,transporter,ABC,ABCG-half,0
+Mapoly0042s0109,transporter,ABC,ABCG-half,0
+Mapoly0049s0041,transporter,ABC,ABCG-half,0
+Mapoly0061s0001,transporter,ABC,ABCG-half,0
+Mapoly0071s0033,transporter,ABC,ABCG-half,0
+Mapoly0084s0042,transporter,ABC,ABCG-half,0
+Mapoly0094s0060,transporter,ABC,ABCG-half,0
+Mapoly0097s0053,transporter,ABC,ABCG-half,0
+Mapoly0097s0054,transporter,ABC,ABCG-half,0
+Mapoly0098s0052,transporter,ABC,ABCG-half,0
+Mapoly0109s0010,transporter,ABC,ABCG-half,0
+Mapoly0109s0011,transporter,ABC,ABCG-half,0
+Mapoly0109s0013,transporter,ABC,ABCG-half,0
+Mapoly0123s0008,transporter,ABC,ABCG-half,0
+Mapoly0140s0016,transporter,ABC,ABCG-half,0
+Mapoly0142s0030,transporter,ABC,ABCG-half,0
+Mapoly0526s0002,transporter,ABC,ABCG-half,0
+Mapoly0010s0182,transporter,ABC,ABCI-soluble,0
+Mapoly0045s0044,transporter,ABC,ABCI-soluble,0
+Mapoly0149s0025,transporter,ABC,ABCI-soluble,0
+Mapoly0035s0112,transporter,ABC,ABCI-soluble,0
+Mapoly0113s0007,transporter,ABC,ABCI-soluble,0
+Mapoly0054s0094,transporter,ABC,ABCI-soluble,0
+Mapoly0065s0083,transporter,ABC,ABCI-soluble,0
+Mapoly0016s0142,transporter,ABC,ABCI-soluble,0
+Mapoly0067s0085,transporter,ABC,ABCI-soluble,0
+Mapoly0059s0034,transporter,ABC,ABCI-soluble,0
