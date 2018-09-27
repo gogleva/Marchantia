@@ -52,13 +52,12 @@ sample_table <- read.csv("data/sample_table_Nbenthamiana.csv",
                          header = T,
                          row.names = 1)
 
+sample_table$Experiment.type <- factor(sample_table$Experiment.type, levels = c('mock', 'infected'))
+
 #to make it shorter:
 names(sample_table)[1] <- "Experiment" 
 #rename for consistency:
 coldata <- sample_table
-
-#put the variable of interest at the end of the formula, the control level is the first level.
-coldata$Experiment <- factor(coldata$Experiment, levels = c('mock', 'infected'))
 
 #----2. DEG analysis with DESeq2
 # Pair-wise comparissons, all the steps in a function for convenience and modularity
