@@ -40,6 +40,7 @@ mp_fc_matrix <- mp_fc_matrix[,-c(1)]
 mp_sample_table <- read.csv("data/sample_table_Mpolymorpha.csv",
                          header = T,
                          row.names = 1)
+mp_sample_table$Experiment.type <- factor(mp_sample_table$Experiment.type, levels = c("mock", "infected"))
 names(mp_sample_table)[1] <- "Experiment" 
 mp_coldata <- mp_sample_table
 mp_coldata$Experiment <- factor(mp_coldata$Experiment, levels = c('mock', 'infected'))
@@ -81,6 +82,7 @@ nb_fc_matrix <- select(nb_fc_table, -rowids)
 nb_sample_table <- read.csv("data/sample_table_Nbenthamiana.csv",
                          header = T,
                          row.names = 1)
+nb_sample_table$Experiment.type <- factor(nb_sample_table$Experiment.type, levels = c("mock", "infected"))
 names(nb_sample_table)[1] <- "Experiment" 
 nb_coldata <- nb_sample_table
 
@@ -167,6 +169,7 @@ mp_deg_all <- rbind(mp_deg1, mp_deg2,
                     mp_deg3, mp_deg4) %>%
               mutate(species = 'Mpoly')
 
+
 # Niben LFC: to do - optimize this ----
 
 nb_deg14 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
@@ -236,7 +239,7 @@ plotdat_mp <- select(ogdeg, c(species, OG, gene_id,
 plotdat_nb <- select(ogdeg, c(species, OG, gene_id,
                               day_time, log2FoldChange)) %>%
     filter(species == 'Niben') %>%
-    select(-c(species)) %>%
+    select(-species) %>%
     rename(log2FoldChange = 'nb_lfc',
            gene_id = 'NB_gene_id') 
 
@@ -252,7 +255,25 @@ ggplot(plotdat_mp_nb, aes(x = nb_lfc, y = mp_lfc)) +
     facet_wrap(~ day_time)
 
 # attach Marchantia curated annotations
-mp_annotation <- read_csv("data/tidy_annotations_all.csv")
+mp_annotation <- read_csv("data/Mpolymorpha_tidy_annotation.csv")
+names(mp_annotation)[1] <- 'MP_gene_id'
 
+plotdat_mp_nb_annotated <- left_join(plotdat_mp_nb, mp_annotation)
+
+# full picture
+ggplot(plotdat_mp_nb_annotated, aes(x = nb_lfc, y = mp_lfc)) +
+    geom_point(aes(color = type)) +
+    geom_vline(xintercept = 0) +
+    geom_hline(yintercept = 0)  +
+    facet_wrap(~day_time)
+
+# remove genes w/o annotation
+plotdat_mp_nb_annotated %>%
+    filter(!is.na(type)) %>%
+    ggplot(aes(x = nb_lfc, y = mp_lfc)) +
+    geom_point(aes(color = type)) +
+    geom_vline(xintercept = 0) +
+    geom_hline(yintercept = 0)  +
+    facet_wrap(~day_time)
 
 
