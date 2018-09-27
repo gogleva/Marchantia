@@ -97,7 +97,8 @@ get_DEG_LFC <- function(pw_counts,
                         pw_coldata,
                         species = c('Mpolymorpha', 'Nbenthamina'),
                         day_time, 
-                        pv = 0.001
+                        pv = 0.001,
+                        set_stage
                         ){
     # produce DEG analysis for a given time point, output a df with significant results (padj and log2FC)
     
@@ -131,7 +132,7 @@ get_DEG_LFC <- function(pw_counts,
     pw_resSig$gene_id <- rownames(pw_resSig)
     
     pw_resSig <- pw_resSig %>%
-                 mutate(day_time = 1) %>%
+                 mutate(day_time = set_stage) %>%
                  select(gene_id, day_time, everything())
     return(pw_resSig)       
 }
@@ -142,20 +143,24 @@ get_DEG_LFC <- function(pw_counts,
 mp_deg1 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
                        pw_coldata = mp_sample_table,
                        species = 'Mpolymorpha',
-                       day_time = 1)
+                       day_time = 1,
+                       set_stage = 1)
 mp_deg2 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
                        pw_coldata = mp_sample_table,
                        species = 'Mpolymorpha',
-                       day_time = 2)
+                       day_time = 2,
+                       set_stage = 2)
 
 mp_deg3 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
                        pw_coldata = mp_sample_table,
                        species = 'Mpolymorpha',
-                       day_time = 3)
+                       day_time = 3,
+                       set_stage = 3)
 mp_deg4 <- get_DEG_LFC(pw_counts = mp_fc_matrix,
                        pw_coldata = mp_sample_table,
                        species = 'Mpolymorpha',
-                       day_time = 4)
+                       day_time = 4,
+                       set_stage = 4)
 # combine in one object
 
 mp_deg_all <- rbind(mp_deg1, mp_deg2,
@@ -167,25 +172,87 @@ mp_deg_all <- rbind(mp_deg1, mp_deg2,
 nb_deg14 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
                     pw_coldata = nb_sample_table,
                     species = 'Nbenthamiana',
-                    day_time = 14)
+                    day_time = 14,
+                    set_stage = 1)
 
 nb_deg24 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
                         pw_coldata = nb_sample_table,
                         species = 'Nbenthamiana',
-                        day_time = 24)
+                        day_time = 24,
+                        set_stage = 2)
 
 nb_deg48 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
                         pw_coldata = nb_sample_table,
                         species = 'Nbenthamiana',
-                        day_time = 48)
+                        day_time = 48,
+                        set_stage = 3)
 
 nb_deg72 <- get_DEG_LFC(pw_counts = nb_fc_matrix,
                         pw_coldata = nb_sample_table,
                         species = 'Nbenthamiana',
-                        day_time = 72)
+                        day_time = 72,
+                        set_stage = 4)
 
 nb_deg_all <- rbind(nb_deg14, nb_deg24,
                     nb_deg48, nb_deg72) %>%
               mutate(species = 'Niben')
+
+deg_nb_mp <- rbind(mp_deg_all,
+                   nb_deg_all)
+
+
+#----Parsing OrthoFinder output----
+
+single_copy_OG <- read_tsv('data/SingleCopyOrthogroups.txt',
+                           col_names = FALSE)
+
+names(single_copy_OG) <- 'OG'
+
+orthogroups <- read_delim('data/Orthogroups.csv',
+                          col_names = FALSE,
+                          delim = '\t')
+names(orthogroups) <- c('OG', 'Mpoly', 'Niben')
+
+# extract single copy OG and gene lists:
+
+scp_og <- left_join(single_copy_OG, orthogroups) %>%
+    separate(Mpoly, '\\.', into = c('Mpoly', 
+                                    'the_rest')) %>%
+    separate(Niben, '\\.', into = c('Niben', 'stuff')) %>% select(-c(the_rest, stuff)) %>%
+    gather(Mpoly, Niben, key = 'species', value = 'gene_id')
+
+# attach DEG tables with OG id:
+ogdeg <- left_join(scp_og, deg_nb_mp)
+
+# prepare for plotting (there might be a better way)
+
+plotdat_mp <- select(ogdeg, c(species, OG, gene_id,
+                              day_time, log2FoldChange)) %>%
+    filter(species == 'Mpoly') %>%
+    select(-species) %>%
+    rename(log2FoldChange = 'mp_lfc',
+           gene_id = 'MP_gene_id')
+
+plotdat_nb <- select(ogdeg, c(species, OG, gene_id,
+                              day_time, log2FoldChange)) %>%
+    filter(species == 'Niben') %>%
+    select(-c(species)) %>%
+    rename(log2FoldChange = 'nb_lfc',
+           gene_id = 'NB_gene_id') 
+
+
+plotdat_mp_nb <- left_join(plotdat_mp, plotdat_nb) %>%
+    filter(!is.na(mp_lfc) & !is.na(nb_lfc))
+
+# rough plot without annotations
+ggplot(plotdat_mp_nb, aes(x = nb_lfc, y = mp_lfc)) +
+    geom_point(aes(alpha = 0.5)) +
+    geom_vline(xintercept = 0) +
+    geom_hline(yintercept = 0)  +
+    facet_wrap(~ day_time)
+
+# attach Marchantia curated annotations
+mp_annotation <- read_csv("data/tidy_annotations_all.csv")
+
 
 
