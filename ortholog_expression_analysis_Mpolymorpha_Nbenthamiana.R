@@ -325,6 +325,15 @@ nums_both <- full_join(nums_mp, nums_nb, by = 'OG_id') %>%
                     n_Niben = replace_na(n_Niben,0)) 
 
 # overview of gene number changes between Mp and Niben genomes
+nums_both %>%
+    select(c(OG_id, n_Mpoly, n_Niben)) %>%
+    unique() %>%
+    ggplot(aes(x = n_Niben, y = n_Mpoly, color = factor(n_Mpoly))) +
+    geom_jitter(aes(alpha = 0.1)) +
+    xlim(c(0,10)) +
+    ylim(c(0,10)) +
+    theme(legend.position = 'none')
+
 ggplot(nums_both, aes(x = n_Niben, y = n_Mpoly, color = as.factor(n_Mpoly))) +
     geom_jitter(aes(alpha = 0.1)) +
     xlim(c(0,10)) +
@@ -332,5 +341,12 @@ ggplot(nums_both, aes(x = n_Niben, y = n_Mpoly, color = as.factor(n_Mpoly))) +
     theme(legend.position = 'none')
 
 ## Explore TFs
+
+og_tf <- nums_both %>%
+         rename('gene_id.x' = 'MP_gene_id') %>%
+         full_join(mp_annotation) %>%
+         filter(type == 'TF')
+
+         
 
 ## 
