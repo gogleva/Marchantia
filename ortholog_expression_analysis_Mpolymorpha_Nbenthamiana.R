@@ -208,7 +208,6 @@ single_copy_OG <- read_tsv('data/SingleCopyOrthogroups.txt',
 names(single_copy_OG) <- 'OG'
 
 orthogroups <- read_delim('data/Orthogroups.csv',
-                          col_names = FALSE,
                           delim = '\t')
 names(orthogroups) <- c('OG', 'Mpoly', 'Niben')
 
@@ -275,6 +274,63 @@ plotdat_mp_nb_annotated %>%
 View(plotdat_mp_nb_annotated %>%
          filter(!is.na(type)))
 
-
 ### figure for the paper
 
+plotdat_mp_nb_annotated %>%
+    arrange(!is.na(type), type) %>%
+    ggplot(aes(x = nb_lfc, y = mp_lfc)) +
+    geom_point(aes(color = type)) +
+    geom_vline(xintercept = 0) +
+    geom_hline(yintercept = 0)  +
+    facet_wrap(~day_time) +
+    xlab('LFC N. benthamiana') +
+    ylab('LFC M. polymorpha') +
+    theme_bw()
+
+### non 1-1 ortholog relationship
+
+all_og <- read_delim("data/Orthogroups.txt", 
+                     delim = ':',
+                     col_names = FALSE)
+
+names(all_og) <- c('OG_id', 'genes')
+
+# magic
+all_og <- all_og %>%
+    mutate(genes = str_split(genes, pattern = ' ')) %>%
+    unnest(genes) %>%
+    filter(genes != "") %>%
+    separate(genes, into = c('gene_id', 'the_rest')) %>%
+    select(-the_rest)
+
+## map OG members/size
+## OG: n genes in Mp; n genes in Nb
+
+nums_mp <- all_og %>%
+    filter(grepl('Mapoly', gene_id)) %>%
+    group_by(OG_id) %>% 
+    add_count(OG_id) %>%
+    ungroup()
+
+nums_nb <- all_og %>%
+    group_by(OG_id) %>%
+    filter(grepl('Niben', gene_id)) %>% 
+    add_count(OG_id) %>%
+    ungroup()
+
+nums_both <- full_join(nums_mp, nums_nb, by = 'OG_id') %>%
+             rename('n.x' = 'n_Mpoly',
+                    'n.y' = 'n_Niben') %>%
+             mutate(n_Mpoly = replace_na(n_Mpoly,0),
+                    n_Niben = replace_na(n_Niben,0)) 
+
+# overview of gene number changes between Mp and Niben genomes
+ggplot(nums_both, aes(x = n_Niben, y = n_Mpoly, color = as.factor(n_Mpoly))) +
+    geom_jitter(aes(alpha = 0.1)) +
+    xlim(c(0,10)) +
+    ylim(c(0,10)) +
+    theme(legend.position = 'none')
+
+## Explore TFs
+
+## 
