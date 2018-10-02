@@ -192,19 +192,22 @@ dds <- DESeqDataSetFromMatrix(countData = fc_matrix,
 
 vsd <- vst(dds, blind = FALSE) # variance-stabilised counts
 
-topVarGenes <- head(order(rowVars(assay(vsd)), 
-                          decreasing = TRUE),
-                    1000)
-mat <- assay(vsd)[topVarGenes, ]
-mat <- mat - rowMeans(mat)
+mp_vsd <- as.data.frame(assay(vsd)) %>%
+          mutate(id = rownames(vsd))
+
+mp_DEG <- filter(mp_vsd, id %in% all_DEG_ids) %>%
+    select(id, everything())
+
+rownames(mp_DEG) <- mp_DEG$id
+mp_DEG <- select(mp_DEG, -id)
+DEGmat <- mp_DEG - rowMeans(mp_DEG)
 anno <- as.data.frame(colData(vsd)[, c('Time', 'Experiment')])
 
-pheatmap(mat, cluster_cols = FALSE,
+# heatmap of all DEGs!
+pheatmap(DEGmat, cluster_cols = FALSE,
          show_rownames = FALSE,
-         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50))
-
-dev.off()
-
+         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
+         annotation = anno)
 
 
 
