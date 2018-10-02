@@ -271,10 +271,7 @@ plotdat_mp_nb_annotated %>%
     geom_hline(yintercept = 0)  +
     facet_wrap(~day_time)
 
-View(plotdat_mp_nb_annotated %>%
-         filter(!is.na(type)))
-
-### figure for the paper
+### scatterplots for the paper
 
 plotdat_mp_nb_annotated %>%
     arrange(!is.na(type), type) %>%
@@ -286,6 +283,41 @@ plotdat_mp_nb_annotated %>%
     xlab('LFC N. benthamiana') +
     ylab('LFC M. polymorpha') +
     theme_bw()
+
+# add heatmaps for single-copy orthologs
+
+# marchantia:
+cats_of_interest <- c('')
+mp_sc_og <- plotdat_mp_nb_annotated %>%
+            filter(!is.na(type)) %>%
+            pull(MP_gene_id)
+
+
+
+library(genefilter)
+mp_dds <- DESeqDataSetFromMatrix(countData = mp_fc_matrix,
+                              colData = mp_coldata,
+                              design = ~ Experiment)
+
+mp_vsd <- vst(mp_dds, blind = FALSE) # variance-stabilised counts
+
+mp_vsd <- as.data.frame(assay(mp_vsd)) %>%
+    mutate(id = rownames(mp_vsd))
+
+mp_DEG_sc <- filter(mp_vsd, id %in% mp_sc_og) %>%
+    select(id, everything())
+
+rownames(mp_DEG_sc) <- mp_DEG_sc$id
+mp_DEG_sc <- select(mp_DEG_sc, -id)
+mp_DEGmat_sc <- mp_DEG_sc - rowMeans(mp_DEG_sc)
+anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
+
+# heatmap of all DEGs!
+pheatmap(mp_DEGmat_sc, cluster_cols = FALSE,
+         show_rownames = FALSE,
+         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
+         annotation = anno)
+
 
 ### non 1-1 ortholog relationship
 
@@ -340,13 +372,53 @@ ggplot(nums_both, aes(x = n_Niben, y = n_Mpoly, color = as.factor(n_Mpoly))) +
     ylim(c(0,10)) +
     theme(legend.position = 'none')
 
-## Explore TFs
+## Explore flavonoid pathway
 
-og_tf <- nums_both %>%
-         rename('gene_id.x' = 'MP_gene_id') %>%
-         full_join(mp_annotation) %>%
-         filter(type == 'TF')
+og_flav <- nums_both %>%
+           rename('gene_id.x' = 'MP_gene_id') %>%
+           full_join(mp_annotation) %>%
+           filter(type == 'flavonoid pathway')
 
-         
+## try heatmaps to visialise members of the same OG
 
-## 
+## alluvial plots for marchantia
+
+mp_annotation %>%
+    filter(type == 'transporter') %>%
+    pull(MP_gene_id) %in%
+    rownames(DEG_3d) %>%
+    sum()
+
+
+
+fun_sum_mp <- read_csv("data/DEG_summary_Mpolymorpha.csv")
+
+Funs <- fun_sum_mp %>%
+        gather(`1`, `2`, `3`, `4`,
+                key = 'time_point', value = 'num_genes')
+
+Funs$time_point <- as.numeric(Funs$time_point)
+
+set.seed(39) # for nice colours
+
+my_cols <- brewer.pal(8, 'Paired')
+
+cols <- hsv(h = sample(1:8/8), s = sample(1:8)/10, v = sample(1:8)/10)
+
+alluvial_ts(Funs,
+            wave = .3,
+            ygap = 5,
+            col = cols,
+            plotdir = 'centred',
+            alpha= .9,
+            grid = TRUE,
+            grid.lwd = 5,
+            xmargin = 0.4,
+            lab.cex = .8,
+            xlab = '',
+            ylab = '',
+            border = NA,
+            axis.cex = .8, 
+            leg.cex = .7,
+            leg.col='white', 
+            title = "Mpolymorpha, DEG functional summary")
