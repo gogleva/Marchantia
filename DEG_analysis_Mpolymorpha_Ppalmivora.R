@@ -224,8 +224,9 @@ DEG_tidy <- DEG_summary %>%
             select(c(gene_id, log2FoldChange, padj, day))
 
 # attach curated annotations
-mp_annotation <- read_csv("data/Mpolymorpha_tidy_annotation.csv")
-               
+mp_annotation <- read_csv("data/Mpolymorpha_tidy_annotation.csv") %>% mutate(type = replace(type, type == 'Lipoxygenase', 'lipoxygenase')) %>%
+    mutate(type = replace(type, type == 'hATPase', 'HATPase'))
+    
 # up-regulated genes:
 DEG_annotated_UP <- left_join(DEG_tidy, mp_annotation) %>%
                  filter(log2FoldChange > 0) %>%
@@ -262,7 +263,7 @@ alluvial_ts(funs_up,
             axis.cex = .8, 
             leg.cex = .7,
             leg.col='white', 
-            title = "Mpolymorpha, DEG functional summary")
+            title = "Up-regulated genes")
 
 # down-regulated genes
 
@@ -298,7 +299,7 @@ alluvial_ts(funs_down,
             axis.cex = .8, 
             leg.cex = .7,
             leg.col='white', 
-            title = "Mpolymorpha, DEG functional summary")
+            title = "Down-regulated genes")
 
 
 
