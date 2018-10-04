@@ -54,7 +54,7 @@ get_DEG <- function(pw_counts = fc_matrix,
                     pw_coldata = coldata,
                     day,
                     pv = 0.001,
-                    lfc = 2,
+                    lfc = 1.5,
                     res = FALSE){
     # produce DEG analysis for a given time point, output a df with significant results (padj and log2FC)
     
@@ -83,6 +83,7 @@ get_DEG <- function(pw_counts = fc_matrix,
         # Export significant results: |LFC| >= 2 and adjusted p-value <= 10^-3
         pw_resSig <- as.data.frame(subset(pw_res_ordered, padj < pv & abs(log2FoldChange) >= lfc))
         
+        pw_resSig$day = day
         return(pw_resSig)       
     }
 }
@@ -210,6 +211,94 @@ pheatmap(DEGmat, cluster_cols = FALSE,
          annotation = anno)
 
 
+# Alluvial plots for functional summaries ----
+## alluvial plots for Marchantia
+
+library(alluvial)
+
+# combine all DEG information from pair-wise comparisons in a tidy table:
+
+DEG_summary <- rbind(DEG_1d, DEG_2d, DEG_3d, DEG_4d)
+DEG_tidy <- DEG_summary %>%
+            mutate(gene_id = rownames(DEG_summary)) %>%
+            select(c(gene_id, log2FoldChange, padj, day))
+
+# attach curated annotations
+mp_annotation <- read_csv("data/Mpolymorpha_tidy_annotation.csv")
+               
+# up-regulated genes:
+DEG_annotated_UP <- left_join(DEG_tidy, mp_annotation) %>%
+                 filter(log2FoldChange > 0) %>%
+                 group_by(day, type) %>%
+                 summarise(count = n()) %>%
+                 spread(key = day, value = count) %>%
+                 replace(., is.na(.), 0) %>%
+                 filter(type != 0) 
+
+funs_up <- DEG_annotated_UP %>%
+    gather(`1`, `2`, `3`, `4`,
+           key = 'time_point', value = 'num_genes')
+funs_up$time_point <- as.numeric(funs_up$time_point)
+
+# alluvial plot:
+
+set.seed(39) # for nice colours
+
+cols <- hsv(h = sample(1:11/11), s = sample(1:11)/15, v = sample(3:11)/15)
+
+alluvial_ts(funs_up,
+            wave = .3,
+            ygap = 5,
+            col = cols,
+            plotdir = 'centred',
+            alpha= .9,
+            grid = TRUE,
+            grid.lwd = 5,
+            xmargin = 0.4,
+            lab.cex = .8,
+            xlab = '',
+            ylab = '',
+            border = NA,
+            axis.cex = .8, 
+            leg.cex = .7,
+            leg.col='white', 
+            title = "Mpolymorpha, DEG functional summary")
+
+# down-regulated genes
+
+# up-regulated genes:
+DEG_annotated_DOWN <- left_join(DEG_tidy, mp_annotation) %>%
+    filter(log2FoldChange < 0) %>%
+    group_by(day, type) %>%
+    summarise(count = n()) %>%
+    spread(key = day, value = count) %>%
+    replace(., is.na(.), 0) %>%
+    filter(type != 0) 
+
+funs_down <- DEG_annotated_DOWN %>%
+    gather(`1`, `2`, `3`, `4`,
+           key = 'time_point', value = 'num_genes')
+funs_down$time_point <- as.numeric(funs_down$time_point)
+
+# alluvial plot:
+
+alluvial_ts(funs_down,
+            wave = .3,
+            ygap = 5,
+            col = cols,
+            plotdir = 'centred',
+            alpha= .9,
+            grid = TRUE,
+            grid.lwd = 5,
+            xmargin = 0.4,
+            lab.cex = .8,
+            xlab = '',
+            ylab = '',
+            border = NA,
+            axis.cex = .8, 
+            leg.cex = .7,
+            leg.col='white', 
+            title = "Mpolymorpha, DEG functional summary")
 
 
 
