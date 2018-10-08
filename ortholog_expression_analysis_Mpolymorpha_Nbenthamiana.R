@@ -11,6 +11,7 @@ library(genefilter)
 library(gplots)
 library(pheatmap)
 library(stringr)
+library(ggpmisc) # for nice square numbers
 
 #---- 1. Load raw counts and sample metadata for M.polymorpha - ARI-tdTomato and N.benthamiana - ARI-tdTomato timecourses. ----
 
@@ -238,7 +239,6 @@ plotdat_nb <- select(ogdeg, c(species, OG, gene_id,
     rename(log2FoldChange = 'nb_lfc',
            gene_id = 'NB_gene_id') 
 
-
 plotdat_mp_nb <- left_join(plotdat_mp, plotdat_nb) %>%
     filter(!is.na(mp_lfc) & !is.na(nb_lfc))
 
@@ -254,6 +254,8 @@ mp_annotation <- read_csv("data/Mpolymorpha_tidy_annotation.csv")
 names(mp_annotation)[1] <- 'MP_gene_id'
 
 plotdat_mp_nb_annotated <- left_join(plotdat_mp_nb, mp_annotation)
+
+
 
 # full picture
 ggplot(plotdat_mp_nb_annotated, aes(x = nb_lfc, y = mp_lfc)) +
@@ -279,6 +281,7 @@ plotdat_mp_nb_annotated %>%
     geom_point(aes(color = type)) +
     geom_vline(xintercept = 0) +
     geom_hline(yintercept = 0)  +
+    stat_quadrant_counts(colour = 'black') +
     facet_wrap(~day_time) +
     xlab('LFC N. benthamiana') +
     ylab('LFC M. polymorpha') +
