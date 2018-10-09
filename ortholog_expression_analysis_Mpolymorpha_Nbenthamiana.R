@@ -298,9 +298,6 @@ mp_rld <- rlog(mp_dds, blind = FALSE) # regularised log transformed conts
 mp_rld <- as.data.frame(assay(mp_rld))
 mp_rld_centered <- mp_rld - rowMeans(mp_rld)
 
-
-
-
 # 1. attach data from single-copy ortholog list and functional annotation
 master_table <- as.data.frame(mp_rld_centered) %>%
                 mutate(MP_gene_id = rownames(mp_rld_centered)) %>%
@@ -308,8 +305,10 @@ master_table <- as.data.frame(mp_rld_centered) %>%
                 mutate(single_copy = ifelse(MP_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) %>%
                 mutate(deg_list = ifelse(MP_gene_id %in% deg_nb_mp$gene_id, 'DEG', 'no'))
 
-# 2. attach functional annotation
+# 2. attach functional annotation and OG id
 master_table <- left_join(master_table, mp_annotation)
+scp_og$MP_gene_id <- scp_og$gene_id
+master_table <- left_join(master_table, scp_og)
 
 # 3. filter: we need oly single-copy orthologs here, 
 # we need only genes from specified categories
@@ -322,7 +321,7 @@ master_table_sc <- master_table %>%
       filter(type %in% our_cats) %>%
       filter(deg_list == 'DEG') %>%
       filter(description != 'PPP1') %>%
-      select(c(MP_gene_id, A1A:M4C, type)) %>%
+      select(c(MP_gene_id, A1A:M4C, type, OG)) %>%
       arrange(type)
 # 4. split values and annotations in 2 separate matrices for pheatmap
 
@@ -338,8 +337,7 @@ rownames(mp_annotation_row) <- master_table_sc$MP_gene_id
 # experiment layout annotation
 anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
 
-
-# try to plot
+# pheatmap:
 
 pheatmap(mp_mat,
          cluster_cols = FALSE,
@@ -353,6 +351,39 @@ pheatmap(mp_mat,
          gaps_col=c(12),
          gaps_row = cumsum(rle(as.character(master_table_sc$type))$lengths),
          main = 'marchantia single-copy orthologs')
+
+## construct similar plot for Nbenth genes ---:
+
+
+nb_dds <- DESeqDataSetFromMatrix(countData = nb_fc_matrix,
+                                 colData = nb_coldata,
+                                 design = ~ Experiment)
+
+nb_rld <- rlog(nb_dds, blind = FALSE) # regularised log transformed conts
+nb_rld <- as.data.frame(assay(nb_rld))
+nb_rld_centered <- nb_rld - rowMeans(nb_rld)
+
+# 1. attach data from single-copy ortholog list and functional annotation
+master_table_nb <- as.data.frame(nb_rld_centered) %>%
+    mutate(NB_gene_id = rownames(nb_rld_centered)) %>%
+    select(c(NB_gene_id, everything())) %>%
+    mutate(single_copy = ifelse(NB_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) %>%
+    mutate(deg_list = ifelse(NB_gene_id %in% deg_nb_mp$gene_id, 'DEG', 'no'))
+
+
+# attach OG ids
+scp_og$MP_gene_id <- scp_og$gene_id
+scp_og$NB_gene_id <- scp_og$gene_id
+master_table_nb <- left_join(master_table_nb, scp_og)
+
+# filter benthi master table:
+
+
+
+
+
+
+
 
 #----------- Clean this later ----
 
