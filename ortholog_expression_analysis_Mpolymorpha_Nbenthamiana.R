@@ -302,7 +302,8 @@ mp_vsd_centered <- mp_vsd - rowMeans(mp_vsd)
 master_table <- as.data.frame(mp_vsd_centered) %>%
                 mutate(MP_gene_id = rownames(mp_vsd_centered)) %>%
                 select(c(MP_gene_id, everything())) %>%
-                mutate(single_copy = ifelse(MP_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) 
+                mutate(single_copy = ifelse(MP_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) %>%
+                mutate(deg_list = ifelse(MP_gene_id %in% deg_nb_mp$gene_id, 'DEG', 'no'))
 
 # 2. attach functional annotation
 master_table <- left_join(master_table, mp_annotation)
@@ -314,7 +315,9 @@ our_cats <- c('flavonoid pathway',
               'PR',
               'TF')
 master_table_sc <- master_table %>%
-                   filter(single_copy == 'single_copy') %>% filter(type %in% our_cats) %>%
+                   filter(single_copy == 'single_copy') %>% 
+      filter(type %in% our_cats) %>%
+      filter(deg_list == 'DEG') %>%
       filter(description != 'PPP1') %>%
       select(c(MP_gene_id, A1A:M4C, type)) %>%
       arrange(type)
@@ -397,9 +400,4 @@ nums_both %>%
     xlim(c(0,10)) +
     ylim(c(0,10)) +
     theme(legend.position = 'none')
-
-
-
-
-
 
