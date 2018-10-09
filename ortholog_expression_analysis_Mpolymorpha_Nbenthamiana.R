@@ -256,7 +256,6 @@ names(mp_annotation)[1] <- 'MP_gene_id'
 plotdat_mp_nb_annotated <- left_join(plotdat_mp_nb, mp_annotation)
 
 
-
 # full picture
 ggplot(plotdat_mp_nb_annotated, aes(x = nb_lfc, y = mp_lfc)) +
     geom_point(aes(color = type)) +
@@ -264,7 +263,7 @@ ggplot(plotdat_mp_nb_annotated, aes(x = nb_lfc, y = mp_lfc)) +
     geom_hline(yintercept = 0)  +
     facet_wrap(~day_time)
 
-# remove genes w/o annotation
+# remove genes w/o selected annotation
 plotdat_mp_nb_annotated %>%
     filter(!is.na(type)) %>%
     ggplot(aes(x = nb_lfc, y = mp_lfc)) +
@@ -290,60 +289,89 @@ plotdat_mp_nb_annotated %>%
 # add heatmaps for single-copy orthologs
 
 # marchantia:
-mp_sc_og <- plotdat_mp_nb_annotated %>%
-            filter(!is.na(type)) %>%
-            pull(MP_gene_id)
 
 mp_dds <- DESeqDataSetFromMatrix(countData = mp_fc_matrix,
-                              colData = mp_coldata,
-                              design = ~ Experiment)
+                                 colData = mp_coldata,
+                                 design = ~ Experiment)
 
 mp_vsd <- vst(mp_dds, blind = FALSE) # variance-stabilised counts
+mp_vsd <- as.data.frame(assay(mp_vsd))
+mp_vsd_centered <- mp_vsd - rowMeans(mp_vsd)
 
-mp_vsd <- as.data.frame(assay(mp_vsd)) %>%
-    mutate(id = rownames(mp_vsd))
+# 1. select genes from single-copy ortholog list
+# 2. attach functional annotations
+# 3. filter and split values and annotations in 2 separate matrices for pheatmap
 
-mp_DEG_sc <- filter(mp_vsd, id %in% mp_sc_og) %>%
+
+
+
+
+
+# select genes from single-copy ortholog list only
+mp_DEG_sc <- filter(mp_vsd, id %in% plotdat_mp_nb_annotated$MP_gene_id) %>%
     select(id, everything())
 
 rownames(mp_DEG_sc) <- mp_DEG_sc$id
 mp_DEG_sc <- select(mp_DEG_sc, -id)
 mp_DEGmat_sc <- mp_DEG_sc - rowMeans(mp_DEG_sc)
+
 anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
 
+## now, we need to select genes belonging to functional categories we are interested in:
 
-mp_DEGmat_sc_flav <- mp_DEGmat_sc[rownames(mp_DEGmat_sc) %in% og_flav$MP_gene_id,]
+our_cats <- c('flavonoid pathway',
+              'trafficking',
+              'PR',
+              'TF')
+
+fun_ids <- filter(mp_annotation, type %in% our_cats) %>%
+    pull('MP_gene_id')
+
+# work on this! we need to group genes by category
+
+mp_DEGmat_sc_plot <- mp_DEGmat_sc[rownames(mp_DEGmat_sc) %in% fun_ids,]
 
 ## to do: add descriptions and gaps
 
-an_flav <- data.frame(row.names = rownames(mp_DEGmat_sc_flav), MP_gene_id = rownames(mp_DEGmat_sc_flav)) 
+an_flav <- data.frame(row.names = rownames(mp_DEGmat_sc_plot), MP_gene_id = rownames(mp_DEGmat_sc_plot)) 
 
-an_flav <- left_join(an_flav, mp_annotation) %>%
-           select(c(MP_gene_id, description))
-rownames(an_flav) <- an_flav$MP_gene_id
-an_flav <- an_flav[-1]
+categories <- left_join(an_flav, mp_annotation) %>%
+              filter(description != 'PPP1') %>%
+              select(c(MP_gene_id, type)) %>%
+              arrange(type)
+
+mp_DEGdf_sc_plot <- as.data.frame(mp_DEGmat_sc_plot)
+mp_DEGdf_sc_plot$MP_gene_id <- rownames(mp_DEGdf_sc_plot)
+
+mp_DEGmat_sc_plot <- left_join(mp_DEGdf_sc_plot,
+                               categories) %>%
+                     arrange(type) %>%
+                     select(-type)
+rownames(mp_DEGmat_sc_plot) <- mp_DEGdf_sc_plot$MP_gene_id
+
+mp_DEGmat_sc_plot <- select(mp_DEGmat_sc_plot, -MP_gene_id) %>% as.matrix()
+
+rownames(categories) <- categories$MP_gene_id
+categories <- categories[-1]
 
 
-row_cols <- brewer.pal(9, 'Paired')
-names(Var1) <- c("Exp1", "Exp2")
-anno_colors <- list(Var1 = Var1)
-
-
-# Specify colors
-my_cols <- list(description = row_cols)
-
-pheatmap(mp_DEGmat_sc_flav,
+pheatmap(mp_DEGmat_sc_plot,
          cluster_cols = FALSE,
          cluster_rows = TRUE,
          show_rownames = TRUE,
          color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
-         annotation = anno,
-         annotation_row = an_flav,
+         annotation_row = categories,
          cellheight = 7, cellwidth = 7,
          fontsize_row = 8,
          fontsize_col = 8,
          gaps_col=c(12),
-         main = 'flavonoid pathway')
+         main = 'marchantia single-copy orthologs')
+
+
+
+#----------- Clean this later ----
+
+
 
 
 ### non 1-1 ortholog relationship
