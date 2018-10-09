@@ -294,13 +294,16 @@ mp_dds <- DESeqDataSetFromMatrix(countData = mp_fc_matrix,
                                  colData = mp_coldata,
                                  design = ~ Experiment)
 
-mp_vsd <- vst(mp_dds, blind = FALSE) # variance-stabilised counts
-mp_vsd <- as.data.frame(assay(mp_vsd))
-mp_vsd_centered <- mp_vsd - rowMeans(mp_vsd)
+mp_rld <- rlog(mp_dds, blind = FALSE) # regularised log transformed conts
+mp_rld <- as.data.frame(assay(mp_rld))
+mp_rld_centered <- mp_rld - rowMeans(mp_rld)
+
+
+
 
 # 1. attach data from single-copy ortholog list and functional annotation
-master_table <- as.data.frame(mp_vsd_centered) %>%
-                mutate(MP_gene_id = rownames(mp_vsd_centered)) %>%
+master_table <- as.data.frame(mp_rld_centered) %>%
+                mutate(MP_gene_id = rownames(mp_rld_centered)) %>%
                 select(c(MP_gene_id, everything())) %>%
                 mutate(single_copy = ifelse(MP_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) %>%
                 mutate(deg_list = ifelse(MP_gene_id %in% deg_nb_mp$gene_id, 'DEG', 'no'))
@@ -350,7 +353,6 @@ pheatmap(mp_mat,
          gaps_col=c(12),
          gaps_row = cumsum(rle(as.character(master_table_sc$type))$lengths),
          main = 'marchantia single-copy orthologs')
-
 
 #----------- Clean this later ----
 
