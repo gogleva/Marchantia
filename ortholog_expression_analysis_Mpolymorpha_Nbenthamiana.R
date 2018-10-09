@@ -290,14 +290,10 @@ plotdat_mp_nb_annotated %>%
 # add heatmaps for single-copy orthologs
 
 # marchantia:
-cats_of_interest <- c('')
 mp_sc_og <- plotdat_mp_nb_annotated %>%
             filter(!is.na(type)) %>%
             pull(MP_gene_id)
 
-
-
-library(genefilter)
 mp_dds <- DESeqDataSetFromMatrix(countData = mp_fc_matrix,
                               colData = mp_coldata,
                               design = ~ Experiment)
@@ -315,11 +311,39 @@ mp_DEG_sc <- select(mp_DEG_sc, -id)
 mp_DEGmat_sc <- mp_DEG_sc - rowMeans(mp_DEG_sc)
 anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
 
-# heatmap of all DEGs!
-pheatmap(mp_DEGmat_sc, cluster_cols = FALSE,
-         show_rownames = FALSE,
+
+mp_DEGmat_sc_flav <- mp_DEGmat_sc[rownames(mp_DEGmat_sc) %in% og_flav$MP_gene_id,]
+
+## to do: add descriptions and gaps
+
+an_flav <- data.frame(row.names = rownames(mp_DEGmat_sc_flav), MP_gene_id = rownames(mp_DEGmat_sc_flav)) 
+
+an_flav <- left_join(an_flav, mp_annotation) %>%
+           select(c(MP_gene_id, description))
+rownames(an_flav) <- an_flav$MP_gene_id
+an_flav <- an_flav[-1]
+
+
+row_cols <- brewer.pal(9, 'Paired')
+names(Var1) <- c("Exp1", "Exp2")
+anno_colors <- list(Var1 = Var1)
+
+
+# Specify colors
+my_cols <- list(description = row_cols)
+
+pheatmap(mp_DEGmat_sc_flav,
+         cluster_cols = FALSE,
+         cluster_rows = TRUE,
+         show_rownames = TRUE,
          color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
-         annotation = anno)
+         annotation = anno,
+         annotation_row = an_flav,
+         cellheight = 7, cellwidth = 7,
+         fontsize_row = 8,
+         fontsize_col = 8,
+         gaps_col=c(12),
+         main = 'flavonoid pathway')
 
 
 ### non 1-1 ortholog relationship
@@ -369,18 +393,22 @@ nums_both %>%
     ylim(c(0,10)) +
     theme(legend.position = 'none')
 
-ggplot(nums_both, aes(x = n_Niben, y = n_Mpoly, color = as.factor(n_Mpoly))) +
-    geom_jitter(aes(alpha = 0.1)) +
-    xlim(c(0,10)) +
-    ylim(c(0,10)) +
-    theme(legend.position = 'none')
-
-## Explore flavonoid pathway
+## Explore flavonoid pathway & trafficking
 
 og_flav <- nums_both %>%
            rename('gene_id.x' = 'MP_gene_id') %>%
            full_join(mp_annotation) %>%
            filter(type == 'flavonoid pathway')
 
-## try heatmaps to visialise members of the same OG
+## try heatmaps to visialise members of the same OG, responding (or not during infection)
+
+# these are single-copy orthologs in Niben and Mpoly
+View(og_flav %>%
+    filter(n_Mpoly == 1 & n_Niben == 1))
+
+# we will try to visualise them
+
+
+
+
 
