@@ -298,81 +298,58 @@ mp_vsd <- vst(mp_dds, blind = FALSE) # variance-stabilised counts
 mp_vsd <- as.data.frame(assay(mp_vsd))
 mp_vsd_centered <- mp_vsd - rowMeans(mp_vsd)
 
-# 1. select genes from single-copy ortholog list
-# 2. attach functional annotations
-# 3. filter and split values and annotations in 2 separate matrices for pheatmap
+# 1. attach data from single-copy ortholog list and functional annotation
+master_table <- as.data.frame(mp_vsd_centered) %>%
+                mutate(MP_gene_id = rownames(mp_vsd_centered)) %>%
+                select(c(MP_gene_id, everything())) %>%
+                mutate(single_copy = ifelse(MP_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) 
 
+# 2. attach functional annotation
+master_table <- left_join(master_table, mp_annotation)
 
-
-
-
-
-# select genes from single-copy ortholog list only
-mp_DEG_sc <- filter(mp_vsd, id %in% plotdat_mp_nb_annotated$MP_gene_id) %>%
-    select(id, everything())
-
-rownames(mp_DEG_sc) <- mp_DEG_sc$id
-mp_DEG_sc <- select(mp_DEG_sc, -id)
-mp_DEGmat_sc <- mp_DEG_sc - rowMeans(mp_DEG_sc)
-
-anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
-
-## now, we need to select genes belonging to functional categories we are interested in:
-
+# 3. filter: we need oly single-copy orthologs here, 
+# we need only genes from specified categories
 our_cats <- c('flavonoid pathway',
               'trafficking',
               'PR',
               'TF')
+master_table_sc <- master_table %>%
+                   filter(single_copy == 'single_copy') %>% filter(type %in% our_cats) %>%
+      filter(description != 'PPP1') %>%
+      select(c(MP_gene_id, A1A:M4C, type)) %>%
+      arrange(type)
+# 4. split values and annotations in 2 separate matrices for pheatmap
 
-fun_ids <- filter(mp_annotation, type %in% our_cats) %>%
-    pull('MP_gene_id')
-
-# work on this! we need to group genes by category
-
-mp_DEGmat_sc_plot <- mp_DEGmat_sc[rownames(mp_DEGmat_sc) %in% fun_ids,]
-
-## to do: add descriptions and gaps
-
-an_flav <- data.frame(row.names = rownames(mp_DEGmat_sc_plot), MP_gene_id = rownames(mp_DEGmat_sc_plot)) 
-
-categories <- left_join(an_flav, mp_annotation) %>%
-              filter(description != 'PPP1') %>%
-              select(c(MP_gene_id, type)) %>%
-              arrange(type)
-
-mp_DEGdf_sc_plot <- as.data.frame(mp_DEGmat_sc_plot)
-mp_DEGdf_sc_plot$MP_gene_id <- rownames(mp_DEGdf_sc_plot)
-
-mp_DEGmat_sc_plot <- left_join(mp_DEGdf_sc_plot,
-                               categories) %>%
-                     arrange(type) %>%
-                     select(-type)
-rownames(mp_DEGmat_sc_plot) <- mp_DEGdf_sc_plot$MP_gene_id
-
-mp_DEGmat_sc_plot <- select(mp_DEGmat_sc_plot, -MP_gene_id) %>% as.matrix()
-
-rownames(categories) <- categories$MP_gene_id
-categories <- categories[-1]
+mp_mat <- select(master_table_sc,
+                 c(A1A:M4C))
+rownames(mp_mat) <- master_table_sc$MP_gene_id
 
 
-pheatmap(mp_DEGmat_sc_plot,
+mp_annotation_row <- select(master_table_sc,
+                            c(type))
+rownames(mp_annotation_row) <- master_table_sc$MP_gene_id
+
+# experiment layout annotation
+anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
+
+
+# try to plot
+
+pheatmap(mp_mat,
          cluster_cols = FALSE,
-         cluster_rows = TRUE,
+         cluster_rows = FALSE,
          show_rownames = TRUE,
          color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
-         annotation_row = categories,
+         annotation_row = mp_annotation_row,
          cellheight = 7, cellwidth = 7,
          fontsize_row = 8,
          fontsize_col = 8,
          gaps_col=c(12),
+         gaps_row = cumsum(rle(as.character(master_table_sc$type))$lengths),
          main = 'marchantia single-copy orthologs')
 
 
-
 #----------- Clean this later ----
-
-
-
 
 ### non 1-1 ortholog relationship
 
@@ -421,20 +398,6 @@ nums_both %>%
     ylim(c(0,10)) +
     theme(legend.position = 'none')
 
-## Explore flavonoid pathway & trafficking
-
-og_flav <- nums_both %>%
-           rename('gene_id.x' = 'MP_gene_id') %>%
-           full_join(mp_annotation) %>%
-           filter(type == 'flavonoid pathway')
-
-## try heatmaps to visialise members of the same OG, responding (or not during infection)
-
-# these are single-copy orthologs in Niben and Mpoly
-View(og_flav %>%
-    filter(n_Mpoly == 1 & n_Niben == 1))
-
-# we will try to visualise them
 
 
 
