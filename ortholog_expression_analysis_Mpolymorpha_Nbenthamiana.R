@@ -313,7 +313,7 @@ get_mat <- function(gene_list,
                                      colData = coldata,
                                      design = ~ Experiment)
     # regularised log transformed conts
-    rld <- rlog(mp_dds, blind = FALSE)
+    rld <- rlog(dds, blind = FALSE)
     rld <- as.data.frame(assay(rld))
     # center values:
     rld_centered <- rld - rowMeans(rld)
@@ -324,6 +324,7 @@ get_mat <- function(gene_list,
     return(plot_mat)
 }
 
+# now, get the gene matrices for Mpolymorpha and Nbenthamiana
 mp_mat <- get_mat(gene_list = flavonoids_sc$MP_gene_id,
                   fc_matrix = mp_fc_matrix,
                   coldata = mp_coldata)
@@ -332,6 +333,30 @@ nb_mat <- get_mat(gene_list = flavonoids_sc$NB_gene_id,
                   fc_matrix = nb_fc_matrix,
                   coldata = nb_coldata)
 
+
+# helper function to construct table with functional annotations and OG id
+
+get_annotations <- function(annotation, 
+                            plot_mat,
+                            id_column
+                            ){
+    df1 <- as.tibble(plot_mat) %>%
+        mutate(id = rownames(plot_mat)) %>%
+        select(c(id, everything()))
+    names(df1)[1] <- id_column
+    df1 <- left_join(df1, flavonoids_sc) %>%
+           arrange(description, OG)
+    return(df1)
+}
+
+
+mp_an <- get_annotations(annotation = flavonoids_sc,
+                plot_mat = mp_mat,
+                id_column = 'MP_gene_id')
+
+nb_an <- get_annotations(annotation = flavonoids_sc,
+                      plot_mat = nb_mat,
+                      id_column = 'NB_gene_id')
 
 
 
