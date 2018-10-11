@@ -301,6 +301,38 @@ flavonoids_sc <- plotdat_mp_nb_annotated %>%
                  distinct()
 
 
+## helper functions to construct heatmaps for specified gene lists
+
+# helper function to  construct dds object, perform count transformation and extract values for relevant genes to build hetamaps
+
+get_mat <- function(gene_list,
+                    fc_matrix,
+                    coldata){
+
+    dds <- DESeqDataSetFromMatrix(countData = fc_matrix,
+                                     colData = coldata,
+                                     design = ~ Experiment)
+    # regularised log transformed conts
+    rld <- rlog(mp_dds, blind = FALSE)
+    rld <- as.data.frame(assay(rld))
+    # center values:
+    rld_centered <- rld - rowMeans(rld)
+    
+    # extract only genes of interest:
+    
+    plot_mat <- rld_centered[gene_list,]
+    return(plot_mat)
+}
+
+mp_mat <- get_mat(gene_list = flavonoids_sc$MP_gene_id,
+                  fc_matrix = mp_fc_matrix,
+                  coldata = mp_coldata)
+
+nb_mat <- get_mat(gene_list = flavonoids_sc$NB_gene_id,
+                  fc_matrix = nb_fc_matrix,
+                  coldata = nb_coldata)
+
+
 
 
 
