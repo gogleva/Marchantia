@@ -197,6 +197,9 @@ nb_deg_all <- rbind(nb_deg14, nb_deg24,
                     nb_deg48, nb_deg72) %>%
               mutate(species = 'Niben')
 
+
+# bind lists of potentialy deg genes (nb: here we filter just by adjusted p-value, not by LFC --> gene lists obtained with DEG_analysis_Mpolymorpha_Ppalmivora.R and DEG_analysis_Nbenthamiana_Ppalmivora.R scripts will be slightly different)
+
 deg_nb_mp <- rbind(mp_deg_all,
                    nb_deg_all)
 
@@ -286,151 +289,20 @@ plotdat_mp_nb_annotated %>%
     ylab('LFC M. polymorpha') +
     theme_bw()
 
-# add heatmaps for single-copy orthologs
 
-# marchantia:
+## Plot heatmaps for single-copy orthologs, belonging to the falvonoid pathway
 
-mp_dds <- DESeqDataSetFromMatrix(countData = mp_fc_matrix,
-                                 colData = mp_coldata,
-                                 design = ~ Experiment)
+# reference table with inforamtion about gene ids, OG and annotation of single-copy genes in Mp and Nb involved in flavonoid pathway (9 genes):
 
-mp_rld <- rlog(mp_dds, blind = FALSE) # regularised log transformed conts
-mp_rld <- as.data.frame(assay(mp_rld))
-mp_rld_centered <- mp_rld - rowMeans(mp_rld)
-
-# 1. attach data from single-copy ortholog list and functional annotation
-master_table <- as.data.frame(mp_rld_centered) %>%
-                mutate(MP_gene_id = rownames(mp_rld_centered)) %>%
-                select(c(MP_gene_id, everything())) %>%
-                mutate(single_copy = ifelse(MP_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) %>%
-                mutate(deg_list = ifelse(MP_gene_id %in% deg_nb_mp$gene_id, 'DEG', 'no'))
-
-# 2. attach functional annotation and OG id
-master_table <- left_join(master_table, mp_annotation)
-scp_og$MP_gene_id <- scp_og$gene_id
-master_table <- left_join(master_table, scp_og)
-
-# 3. filter: we need oly single-copy orthologs here, 
-# we need only genes from specified categories
-our_cats <- c('flavonoid pathway',
-              'trafficking',
-              'PR',
-              'TF')
-master_table_sc <- master_table %>%
-                   filter(single_copy == 'single_copy') %>% 
-      filter(type %in% our_cats) %>%
-      filter(deg_list == 'DEG') %>%
-      filter(description != 'PPP1') %>%
-      select(c(MP_gene_id, A1A:M4C, type, OG)) %>%
-      arrange(type)
-# 4. split values and annotations in 2 separate matrices for pheatmap
-
-mp_mat <- select(master_table_sc,
-                 c(A1A:M4C))
-rownames(mp_mat) <- master_table_sc$MP_gene_id
-
-
-mp_annotation_row <- select(master_table_sc,
-                            c(type))
-rownames(mp_annotation_row) <- master_table_sc$MP_gene_id
-
-# experiment layout annotation
-anno <- as.data.frame(colData(mp_dds)[, c('Time', 'Experiment')])
-
-# pheatmap:
-
-pheatmap(mp_mat,
-         cluster_cols = FALSE,
-         cluster_rows = FALSE,
-         show_rownames = TRUE,
-         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
-         annotation_row = mp_annotation_row,
-         cellheight = 7, cellwidth = 7,
-         fontsize_row = 8,
-         fontsize_col = 8,
-         gaps_col=c(12),
-         gaps_row = cumsum(rle(as.character(master_table_sc$type))$lengths),
-         main = 'marchantia single-copy orthologs')
-
-## construct similar plot for Nbenth genes ---:
-
-
-nb_dds <- DESeqDataSetFromMatrix(countData = nb_fc_matrix,
-                                 colData = nb_coldata,
-                                 design = ~ Experiment)
-
-nb_rld <- rlog(nb_dds, blind = FALSE) # regularised log transformed conts
-nb_rld <- as.data.frame(assay(nb_rld))
-nb_rld_centered <- nb_rld - rowMeans(nb_rld)
-
-# 1. attach data from single-copy ortholog list and functional annotation
-master_table_nb <- as.data.frame(nb_rld_centered) %>%
-    mutate(NB_gene_id = rownames(nb_rld_centered)) %>%
-    select(c(NB_gene_id, everything())) %>%
-    mutate(single_copy = ifelse(NB_gene_id %in% scp_og$gene_id, 'single_copy', 'no')) %>%
-    mutate(deg_list = ifelse(NB_gene_id %in% deg_nb_mp$gene_id, 'DEG', 'no'))
-
-
-# attach OG ids
-scp_og$MP_gene_id <- scp_og$gene_id
-scp_og$NB_gene_id <- scp_og$gene_id
-master_table_nb <- left_join(master_table_nb, scp_og)
-
-# filter benthi master table:
+flavonoids_sc <- plotdat_mp_nb_annotated %>%
+                 filter(type == 'flavonoid pathway') %>%
+                 select(c(OG, MP_gene_id, NB_gene_id, type,
+                          description)) %>%
+                 distinct()
 
 
 
 
 
 
-
-
-#----------- Clean this later ----
-
-### non 1-1 ortholog relationship
-
-all_og <- read_delim("data/Orthogroups.txt", 
-                     delim = ':',
-                     col_names = FALSE)
-
-names(all_og) <- c('OG_id', 'genes')
-
-# magic
-all_og <- all_og %>%
-    mutate(genes = str_split(genes, pattern = ' ')) %>%
-    unnest(genes) %>%
-    filter(genes != "") %>%
-    separate(genes, into = c('gene_id', 'the_rest')) %>%
-    select(-the_rest)
-
-## map OG members/size
-## OG: n genes in Mp; n genes in Nb
-
-nums_mp <- all_og %>%
-    filter(grepl('Mapoly', gene_id)) %>%
-    group_by(OG_id) %>% 
-    add_count(OG_id) %>%
-    ungroup()
-
-nums_nb <- all_og %>%
-    group_by(OG_id) %>%
-    filter(grepl('Niben', gene_id)) %>% 
-    add_count(OG_id) %>%
-    ungroup()
-
-nums_both <- full_join(nums_mp, nums_nb, by = 'OG_id') %>%
-             rename('n.x' = 'n_Mpoly',
-                    'n.y' = 'n_Niben') %>%
-             mutate(n_Mpoly = replace_na(n_Mpoly,0),
-                    n_Niben = replace_na(n_Niben,0)) 
-
-# overview of gene number changes between Mp and Niben genomes
-nums_both %>%
-    select(c(OG_id, n_Mpoly, n_Niben)) %>%
-    unique() %>%
-    ggplot(aes(x = n_Niben, y = n_Mpoly, color = factor(n_Mpoly))) +
-    geom_jitter(aes(alpha = 0.1)) +
-    xlim(c(0,10)) +
-    ylim(c(0,10)) +
-    theme(legend.position = 'none')
 
