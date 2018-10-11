@@ -358,7 +358,65 @@ nb_an <- get_annotations(annotation = flavonoids_sc,
                       plot_mat = nb_mat,
                       id_column = 'NB_gene_id')
 
+# plot the heatmaps, oreder of genes is the same (same OG)
 
+exp_annotation_mp <- data.frame(row.names = colnames(mp_mat),
+                             time = rep(c(rep('1d',3),
+                                          rep('2d',3),
+                                          rep('3d', 3),
+                                          rep('4d',3)), 2),
+                             experiment = c(rep('infected', 12),
+                                            rep('mock',12)))
+### Marchantia
+
+mp_df3 <-  mp_an
+mp_am <- data.frame(descr = mp_df3$description, row.names = mp_df3$OG)
+mp_mm <- as.matrix(select(mp_df3, 2:25))
+rownames(mp_mm) <- mp_df3$OG
+
+pheatmap(mp_mm,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         show_rownames = TRUE,
+         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
+         legend = TRUE,
+         annotation_row = mp_am,
+         annotation = exp_annotation_mp,
+         annotation_legend = TRUE,
+         main='Marc',
+         cellheight = 12, cellwidth = 12,
+         fontsize_row = 8,
+         fontsize_col = 8,
+         gaps_col=c(12))
+
+### Benthi
+nb_df3 <-  nb_an
+nb_am <- data.frame(descr = nb_df3$description, row.names = nb_df3$OG)
+nb_mm <- as.matrix(select(nb_df3, 2:25))
+rownames(nb_mm) <- nb_df3$OG
+
+exp_annotation_nb <- data.frame(row.names = colnames(nb_mat),
+                             time = rep(c(rep('14h',3),
+                                          rep('24h',3),
+                                          rep('48h', 3),
+                                          rep('72h',3)), 2),
+                             experiment = c(rep('infected', 12),
+                                            rep('mock',12)))
+
+pheatmap(nb_mm,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         show_rownames = TRUE,
+         color = colorRampPalette(c("navy", "white", "#1B9E77"))(50),
+         legend = TRUE,
+         annotation_row = nb_am,
+         annotation = exp_annotation_nb,
+         annotation_legend = TRUE,
+         main='Benthi',
+         cellheight = 12, cellwidth = 12,
+         fontsize_row = 8,
+         fontsize_col = 8,
+         gaps_col=c(12))
 
 
 
