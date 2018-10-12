@@ -275,7 +275,7 @@ plotdat_mp_nb_annotated %>%
     geom_hline(yintercept = 0)  +
     facet_wrap(~day_time)
 
-### scatterplots for the paper
+### scatterplots for the paper (put all grey points on the background layer, important categories - to the top)
 
 plotdat_mp_nb_annotated %>%
     arrange(!is.na(type), type) %>%
@@ -292,7 +292,7 @@ plotdat_mp_nb_annotated %>%
 
 ## Plot heatmaps for single-copy orthologs, belonging to the falvonoid pathway
 
-# reference table with inforamtion about gene ids, OG and annotation of single-copy genes in Mp and Nb involved in flavonoid pathway (9 genes):
+# reference table with information about gene ids, OG and annotation of single-copy genes in Mp and Nb involved in flavonoid pathway (9 genes):
 
 flavonoids_sc <- plotdat_mp_nb_annotated %>%
                  filter(type == 'flavonoid pathway') %>%
