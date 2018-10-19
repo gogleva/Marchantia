@@ -425,7 +425,7 @@ all_og <- read_tsv("data/Orthogroups.csv",
 
 names(all_og) <- c('OG_id', 'MP_genes', 'NB_genes')
 
-#  magic
+#  spread Orthogroups and gene ids in a tall table
 all_og_spread <- all_og %>%
                  mutate(genes = 
                             str_split(paste(MP_genes, NB_genes,
@@ -433,6 +433,39 @@ all_og_spread <- all_og %>%
                  select(c(OG_id, genes)) %>%
                  unnest()
 
+## map OG members/size
+## OG: n genes in Mp; n genes in Nb
+
+nums_mp <- all_og_spread %>%
+           filter(grepl('Mapoly', genes)) %>%
+           group_by(OG_id) %>%
+           add_count(OG_id) %>%
+           ungroup() %>%
+           select(-genes) %>%
+           distinct()
+
+nums_nb <- all_og_spread %>%
+    filter(grepl('Niben', genes)) %>%
+    group_by(OG_id) %>%
+    add_count(OG_id) %>%
+    ungroup() %>%
+    select(-genes) %>%
+    distinct()
+
+nums_both <- full_join(nums_mp, nums_nb, by = 'OG_id') %>%
+    rename('n.x' = 'n_Mpoly',
+           'n.y' = 'n_Niben') %>%
+    mutate(n_Mpoly = replace_na(n_Mpoly,0),
+           n_Niben = replace_na(n_Niben,0)) 
+
+nums_both %>%
+    select(c(OG_id, n_Mpoly, n_Niben)) %>%
+    unique() %>%
+    ggplot(aes(x = n_Niben, y = n_Mpoly, color = factor(n_Mpoly))) +
+    geom_jitter(aes(alpha = 0.1)) +
+    xlim(c(0,10)) +
+    ylim(c(0,10)) +
+    theme(legend.position = 'none')
 
 
 
