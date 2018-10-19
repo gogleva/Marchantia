@@ -418,6 +418,23 @@ pheatmap(nb_mm,
          fontsize_col = 8,
          gaps_col=c(12))
 
+### Analysis of  not so single-copy orthologs (we are especially interested in MYB transcription factors)
+
+all_og <- read_tsv("data/Orthogroups.csv", 
+                    col_names = TRUE)
+
+names(all_og) <- c('OG_id', 'MP_genes', 'NB_genes')
+
+#  magic
+all_og_spread <- all_og %>%
+                 mutate(genes = 
+                            str_split(paste(MP_genes, NB_genes,
+                                       sep = ', '), pattern = ', ')) %>%
+                 select(c(OG_id, genes)) %>%
+                 unnest()
+
+
+
 
 
 
