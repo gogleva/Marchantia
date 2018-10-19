@@ -467,7 +467,30 @@ nums_both %>%
     ylim(c(0,10)) +
     theme(legend.position = 'none')
 
+### Attach annotations and explore TF families
+# join with Mp annotation
 
 
 
+all_og_spread2 <- all_og_spread %>%
+                 separate(genes,
+                          into = c('genes', 'the_rest'),
+                          sep = '\\.') %>%
+                 select(-'the_rest')
+
+mp_annotation_re <- rename(mp_annotation, MP_gene_id = 'genes')
+                         
+og_annotated <- left_join(all_og_spread2,
+                          mp_annotation_re)
+
+# also add Mp and Nb size of orthogroup
+
+og_annotated <- left_join(og_annotated, nums_both)
+
+# now, we will be interested in transcription factors, MYBs specificly
+
+og_tf <- og_annotated %>%
+         filter(type == 'TF')
+
+## before I forget: Mp R2R3 MYB14 has not been assigned to any ortjogroup with other genes (hmm)
 
